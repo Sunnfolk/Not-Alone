@@ -8,13 +8,9 @@ public class PlayerInput : MonoBehaviour
  [HideInInspector] public Vector2 moveVector;
  [HideInInspector] public bool run;
  [HideInInspector] public bool dash;
-
- public void Start()
- {
-  GetComponent<Rigidbody2D>();
- }
+ 
  void Update()
- {
+   {
   //Move
   moveVector.x = (Keyboard.current.aKey.isPressed ? -1f : 0f) + (Keyboard.current.dKey.isPressed ? 1f : 0f);
   moveVector.y = (Keyboard.current.sKey.isPressed ? 0f : -1f) + (Keyboard.current.wKey.isPressed ? 0f : 1f);
@@ -28,5 +24,5 @@ public class PlayerInput : MonoBehaviour
   
   //Dash
   dash = Keyboard.current.altKey.wasPressedThisFrame;
- }
+  }
 }

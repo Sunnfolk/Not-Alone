@@ -13,7 +13,7 @@ namespace Player
         private PlayerInput m_Input;
         private Rigidbody2D m_Rigidbody2D;
     
-        private void Start()
+        private void Awake()
         {
             m_Input = GetComponent<PlayerInput>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
