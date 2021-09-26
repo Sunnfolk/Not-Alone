@@ -8,7 +8,7 @@ public class PlayerInput : MonoBehaviour
  [HideInInspector] public Vector2 moveVector;
  [HideInInspector] public bool run;
  [HideInInspector] public bool dash;
- 
+  
  void Update()
    {
   //Move
@@ -23,6 +23,6 @@ public class PlayerInput : MonoBehaviour
   longJump = Keyboard.current.spaceKey.isPressed;
   
   //Dash
-  dash = Keyboard.current.altKey.wasPressedThisFrame;
+  dash = Keyboard.current.eKey.wasPressedThisFrame;
   }
 }

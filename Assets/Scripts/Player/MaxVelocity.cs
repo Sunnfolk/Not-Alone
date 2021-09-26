@@ -24,9 +24,9 @@ namespace Player
         private void SetMaxVelocity()
         {
             if (m_Colliders.IsGrounded()) return;
-            if (!(m_Rigidbody2D.velocity.y < maxVelocity * -1f)) return;
+            if (!(m_Rigidbody2D.velocity.y < -maxVelocity)) return;
             var velocity = m_Rigidbody2D.velocity;
-            velocity = new Vector2(velocity.x, maxVelocity * -1f);
+            velocity = new Vector2(velocity.x, -maxVelocity);
             m_Rigidbody2D.velocity = velocity;
             //print("PlayerSpeed = " + velocity);
         }
