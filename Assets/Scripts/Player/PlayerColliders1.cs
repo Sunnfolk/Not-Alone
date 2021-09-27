@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Player
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class PlayerColliders : MonoBehaviour
+    public class PlayerColliders1 : MonoBehaviour
     {
         // Chooses the layer which Grounded gets activated on
         [SerializeField] private LayerMask whatIsGround;
