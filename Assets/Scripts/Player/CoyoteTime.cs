@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 namespace Player
 {
     [RequireComponent(typeof(PlayerColliders))]
@@ -10,6 +11,11 @@ namespace Player
         private PlayerColliders m_Colliders;
         private Rigidbody2D m_Rigidbody2D;
         private PlayerJump m_Jump;
+        private PlayerDash m_Dash;
+        private PlayerWalk m_Walk;
+        private PlayerInput m_Input;
+        [HideInInspector] public bool hasDashed;
+        [HideInInspector] public bool isDashing;
             
         [HideInInspector] public bool canCoyote;
         
@@ -23,10 +29,14 @@ namespace Player
             m_Colliders = GetComponent<PlayerColliders>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             m_Jump = GetComponent<PlayerJump>();
+            m_Dash = GetComponent<PlayerDash>();
+            m_Walk = GetComponent<PlayerWalk>();
+            m_Input = GetComponent<PlayerInput>();
         }
     
         void Update()
         {
+            print("CanCoyote = " + canCoyote);
             if (m_Colliders.IsGrounded())
             {
                 canCoyote = true;
@@ -36,11 +46,26 @@ namespace Player
             {
                 m_CoyoteTimeCounter -= Time.deltaTime;
             }
+            
             if (m_CoyoteTimeCounter < 0 || m_Jump.isJumping)
             {
                 canCoyote = false;
-                print("CanCoyote = " + canCoyote);
+               
             }
+            if (canCoyote)
+            {
+                hasDashed = false;
+                isDashing = false;
+            }
+
+            if (!hasDashed)
+            {
+                m_Input.enabled = true;
+                m_Walk.enabled = true;
+                m_Jump.enabled = true;
+            }
+            
+            m_Dash.enabled = !canCoyote;
         }
     }
 }
