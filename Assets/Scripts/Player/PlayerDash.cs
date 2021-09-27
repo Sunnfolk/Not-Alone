@@ -64,7 +64,7 @@ namespace Player
             m_Input.enabled = false;
             
                 
-            Vector2 velocity = new Vector2(m_Input.moveVector.x, -m_Input.moveVector.y) * dashSpeed;
+            Vector2 velocity = new Vector2(m_Input.moveVector.x * dashSpeed, -m_Input.moveVector.y * dashSpeed * 0.6f);
             m_Rigidbody2D.velocity = velocity;
 
             m_Rigidbody2D.gravityScale = 0f;

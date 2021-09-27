@@ -1,6 +1,7 @@
+using Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+[RequireComponent(typeof(CoyoteTime))]
 public class PlayerInput : MonoBehaviour
 {
  [HideInInspector] public bool jump;
@@ -8,7 +9,13 @@ public class PlayerInput : MonoBehaviour
  [HideInInspector] public Vector2 moveVector;
  [HideInInspector] public bool run;
  [HideInInspector] public bool dash;
-  
+ private CoyoteTime m_Coyote;
+
+ private void Awake()
+ {
+     m_Coyote = GetComponent<CoyoteTime>();
+ }
+
  void Update()
    {
   //Move
@@ -23,6 +30,9 @@ public class PlayerInput : MonoBehaviour
   longJump = Keyboard.current.spaceKey.isPressed;
   
   //Dash
-  dash = Keyboard.current.eKey.wasPressedThisFrame;
+  if (!m_Coyote.canCoyote)
+  {
+      dash = Keyboard.current.spaceKey.wasPressedThisFrame;
   }
+   }
 }
