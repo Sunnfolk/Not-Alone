@@ -3698,6 +3698,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &699933764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5736888678450705620, guid: 84c8d46c29c423143898b21d3178db9a, type: 3}
+  m_PrefabInstance: {fileID: 1371756300}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &699933777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699933764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d5a3c911aed754e8804581f6801058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  invulnerabilityTimer: 1
 --- !u!1 &743148073
 GameObject:
   m_ObjectHideFlags: 0
@@ -5733,6 +5752,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1340831476}
+  - component: {fileID: 1340831477}
   m_Layer: 0
   m_Name: '*** Spikes ***'
   m_TagString: Untagged
@@ -5771,6 +5791,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1340831477
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340831475}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1371756300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7168,7 +7209,7 @@ GameObject:
   - component: {fileID: 1857660884}
   m_Layer: 7
   m_Name: Spike L1
-  m_TagString: Damage
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7874,7 +7915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5358296955164840110, guid: 85870a0892b8ca4489b65b670472827e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.020057976
+      value: -0.019761264
       objectReference: {fileID: 0}
     - target: {fileID: 5358296955164840110, guid: 85870a0892b8ca4489b65b670472827e, type: 3}
       propertyPath: m_LocalPosition.y
