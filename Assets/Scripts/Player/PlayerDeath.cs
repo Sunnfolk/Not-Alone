@@ -22,6 +22,11 @@ public class PlayerDeath : MonoBehaviour
             }
             
         }
+
+        if (col.gameObject.tag == "DeathZone")
+        {
+            RestartScene();
+        }
     }
     private void RestartScene()
     {
