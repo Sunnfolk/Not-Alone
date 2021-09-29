@@ -1,4 +1,5 @@
-using System.Collections;
+using System.Collections.Generic;
+using Enemy;
 using UnityEngine;
 
 namespace Player
@@ -8,50 +9,79 @@ namespace Player
     {
         private PlayerInput m_Input;
         private CoyoteTime m_Coyote;
-        [SerializeField] private float attackRange;
+        [SerializeField] private float attackRangeGround;
+        [SerializeField] private float attackRangeAir;
         [SerializeField] private LayerMask enemies;
-        public Transform attackLocation;
-        
-
+        public Transform attackLocationGround;
+        public Transform attackLocationAir;
+        [SerializeField]public List<Collider2D> enemiesNearby;
+     
         private void Awake()
         {
             m_Input = GetComponent<PlayerInput>();
             m_Coyote = GetComponent<CoyoteTime>();
         }
-        /*
+        
         private void Update()
         {
             if (!m_Input.attack) return;
+            
             if (m_Coyote.canCoyote)
             {
+                EnemiesInRange();
                 Attack();
             }
             else
             {
                 if (m_Coyote.isDashing) return;
-                AirAttack();
+                AirEnemiesInRange();
+                Attack();
+            }
+            enemiesNearby.Clear();
+        }
+
+        private void EnemiesInRange()
+        {
+            Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(attackLocationGround.position, attackRangeGround, enemies);
+            foreach (var enemy in enemiesInRange)
+            {
+                enemiesNearby.Add(enemy);
             }
         }
 
-        private bool Attack()
+        private void Attack()
         {
-            Collider2D[] damage = Physics2D.OverlapCircleAll( attackLocation.position, attackRange, enemies);
-        }
-
-        private bool AirAttack()
-        {
-            Collider2D[] damage = Physics2D.OverlapCircleAll( attackLocation.position, attackRange, enemies);
-        }
-
-        private IEnumerator AttackCooldown()
-        {
+            foreach (var enemy in enemiesNearby)
+            {
+                enemy.GetComponent<EnemyHealth>().TakeDamage();
+                print("I Attacked: " + enemy.transform.name);
+                
+            }
             
-        } */
+        }
         
+        private void AirEnemiesInRange()
+        {
+            Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(attackLocationAir.position, attackRangeAir, enemies);
+            foreach (var enemy in enemiesInRange)
+            {
+                enemiesNearby.Add(enemy);
+            }
+        }
+
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(attackLocation.position, attackRange);
+            if (m_Coyote.canCoyote)
+            {
+                Gizmos.DrawWireSphere(attackLocationGround.position, attackRangeGround);
+            }
+            else
+            {
+                if (m_Coyote.isDashing) return;
+                Gizmos.DrawWireSphere(attackLocationAir.position, attackRangeAir);
+            }
+            
         }
     }
 }

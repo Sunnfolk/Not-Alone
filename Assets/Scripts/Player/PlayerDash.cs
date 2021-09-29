@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using WorldSystems;
 
 namespace Player
 {
@@ -9,6 +10,7 @@ namespace Player
     public class PlayerDash : MonoBehaviour
 
     {
+        private CinemachineShake m_Shake;
         private PlayerJump m_Jump;
         private CoyoteTime m_Coyote;
         private PlayerWalk m_Walk;
@@ -18,8 +20,9 @@ namespace Player
         [SerializeField] private float normalGravity = 5f;
         [SerializeField] private float dashSpeed = 10f;
 
-        private void Awake() 
+        private void Awake()
         {
+            m_Shake = GetComponent<CinemachineShake>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             m_Colliders = GetComponent<PlayerColliders>();
             m_Input = GetComponent<PlayerInput>();
@@ -43,6 +46,7 @@ namespace Player
             if (m_Input.moveVector.y > 0f) return;
             if (m_Coyote.hasDashed || m_Coyote.isDashing) return;
             if (m_Input.moveVector == Vector2.zero) return;
+            CinemachineShake.Instance.CameraShake(3f, 0.3f);
             m_Coyote.hasDashed = true;
             m_Walk.enabled = false;
             m_Jump.enabled = false;
@@ -52,6 +56,7 @@ namespace Player
             {
                m_Input.moveVector = m_Input.moveVector.normalized;
             }
+            
             
             Vector2 velocity = new Vector2(m_Input.moveVector.x * dashSpeed, -m_Input.moveVector.y * dashSpeed * 0.6f);
             m_Rigidbody2D.velocity = velocity;
