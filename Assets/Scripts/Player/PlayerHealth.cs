@@ -6,7 +6,7 @@ namespace Player
     
     public class PlayerHealth : MonoBehaviour
     {
-        [SerializeField] private int health = 10;
+        [SerializeField] public int health = 10;
 
         private CoyoteTime m_Dash;
         private bool m_Invulnerable;
