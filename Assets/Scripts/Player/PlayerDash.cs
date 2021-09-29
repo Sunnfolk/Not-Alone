@@ -10,7 +10,6 @@ namespace Player
     public class PlayerDash : MonoBehaviour
 
     {
-        private CinemachineShake m_Shake;
         private PlayerJump m_Jump;
         private CoyoteTime m_Coyote;
         private PlayerWalk m_Walk;
@@ -22,7 +21,6 @@ namespace Player
 
         private void Awake()
         {
-            m_Shake = GetComponent<CinemachineShake>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             m_Colliders = GetComponent<PlayerColliders>();
             m_Input = GetComponent<PlayerInput>();
@@ -46,7 +44,6 @@ namespace Player
             if (m_Input.moveVector.y > 0f) return;
             if (m_Coyote.hasDashed || m_Coyote.isDashing) return;
             if (m_Input.moveVector == Vector2.zero) return;
-            CinemachineShake.Instance.CameraShake(3f, 0.3f);
             m_Coyote.hasDashed = true;
             m_Walk.enabled = false;
             m_Jump.enabled = false;
