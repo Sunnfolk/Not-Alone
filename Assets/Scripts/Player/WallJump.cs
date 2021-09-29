@@ -69,7 +69,7 @@ namespace Player
             if (isTouchingLeft || isTouchingRight && !isGrounded)
             {
                 wallSliding = true;
-                WallSlide();
+                //WallSlide();
             }
             
 
