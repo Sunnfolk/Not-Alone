@@ -11,9 +11,9 @@ namespace Enemy
             Death();
         }
 
-        public void TakeDamage()
+        public void TakeDamage(int damage)
         {
-            enemyHealth -= 1;
+            enemyHealth -= damage;
         }
     
 

@@ -22,7 +22,7 @@ namespace Player
             if (other.CompareTag("Damage"))
             {
                 if (m_Dash.isDashing || m_Invulnerable) return;
-                Damage();
+                TakeDamage(1);
                 
             }
 
@@ -38,9 +38,10 @@ namespace Player
             
         }
 
-        private void Damage()
+        public void TakeDamage(int damage)
         {
-            health -= 1;
+            if (m_Invulnerable || m_Dash.isDashing) return;
+            health -= damage;
             StartCoroutine(Invulnerability());
         }
 

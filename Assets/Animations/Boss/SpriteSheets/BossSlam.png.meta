@@ -1,82 +1,76 @@
 fileFormatVersion: 2
-guid: af6f9c4cd2cd00a4a990bf444fe4d501
+guid: d08f3db3e73225f48baac72eceba1cfb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7529550860091207320
-    second: bossbite-Sheet_0
+      213: 145313727047804888
+    second: BossSlam_0
   - first:
-      213: -693042517635819600
-    second: bossbite-Sheet_1
+      213: 5290948217429117677
+    second: BossSlam_1
   - first:
-      213: -6006765996148060622
-    second: bossbite-Sheet_2
+      213: 2307613001928423207
+    second: BossSlam_2
   - first:
-      213: 6815169512933451914
-    second: bossbite-Sheet_3
+      213: 8017073761314429817
+    second: BossSlam_3
   - first:
-      213: 3129654296802523526
-    second: bossbite-Sheet_4
+      213: -6607023872896860764
+    second: BossSlam_4
   - first:
-      213: 1997508274826229753
-    second: bossbite-Sheet_5
+      213: 6349952651526070861
+    second: BossSlam_5
   - first:
-      213: -8045107077729111705
-    second: bossbite-Sheet_6
+      213: -7409854421349034823
+    second: BossSlam_6
   - first:
-      213: -5199362369819248468
-    second: bossbite-Sheet_7
+      213: -7110331988431113082
+    second: BossSlam_7
   - first:
-      213: -7329946029597659149
-    second: bossbite-Sheet_8
+      213: 7397982350745008051
+    second: BossSlam_8
   - first:
-      213: -7927545141574849499
-    second: bossbite-Sheet_9
+      213: 1828497253245430491
+    second: BossSlam_9
   - first:
-      213: -2084077744832057834
-    second: bossbite-Sheet_10
+      213: 4954356021826084348
+    second: BossSlam_10
   - first:
-      213: -4736783779715040298
-    second: bossbite-Sheet_11
+      213: 147897777099824391
+    second: BossSlam_11
   - first:
-      213: -1932973688534235324
-    second: bossbite-Sheet_12
+      213: 5036666061662371636
+    second: BossSlam_12
   - first:
-      213: -3349421807291959912
-    second: bossbite-Sheet_13
+      213: 8834173758572666207
+    second: BossSlam_13
   - first:
-      213: -6617799979554731090
-    second: bossbite-Sheet_14
+      213: 4119578401872766188
+    second: BossSlam_14
   - first:
-      213: 4630785515986909565
-    second: bossbite-Sheet_15
+      213: -3951310440576821818
+    second: BossSlam_15
   - first:
-      213: 1121750826760822753
-    second: bossbite-Sheet_16
+      213: -6562044584920498629
+    second: BossSlam_16
   - first:
-      213: -8171296301186559244
-    second: bossbite-Sheet_17
+      213: -7918208881692087059
+    second: BossSlam_17
   - first:
-      213: 1914575448038921895
-    second: bossbite-Sheet_18
+      213: -620478904582239168
+    second: BossSlam_18
   - first:
-      213: 8744304132428675981
-    second: bossbite-Sheet_19
+      213: 2296559845651719897
+    second: BossSlam_19
   - first:
-      213: -5062754506781906527
-    second: bossbite-Sheet_20
+      213: -1416029604441326983
+    second: BossSlam_20
   - first:
-      213: 3423909016808248002
-    second: bossbite-Sheet_21
+      213: -1483284233240102697
+    second: BossSlam_21
   - first:
-      213: -8732889596389934804
-    second: bossbite-Sheet_22
-  - first:
-      213: -7912858264210479002
-    second: bossbite-Sheet_23
-  - first:
-      213: 8200669351997840390
-    second: bossbite-Sheet_24
+      213: 3982999457068527619
+    second: BossSlam_22
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,7 +115,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 5
   spriteBorder: {x: 4, y: 4, z: 4, w: 4}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -214,49 +208,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bossbite-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 160
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89e29fd2d965e7860800000000000000
-      internalID: 7529550860091207320
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossbite-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1472
-        width: 160
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b7131a8081d166f0800000000000000
-      internalID: -693042517635819600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossbite-Sheet_2
+      name: BossSlam_0
       rect:
         serializedVersion: 2
         x: 0
@@ -270,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23e03b6d62ea3aca0800000000000000
-      internalID: -6006765996148060622
+      spriteID: 8d72ca99012440200800000000000000
+      internalID: 145313727047804888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_3
+      name: BossSlam_1
       rect:
         serializedVersion: 2
         x: 0
@@ -291,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a88687e4098549e50800000000000000
-      internalID: 6815169512933451914
+      spriteID: dea49d00f593d6940800000000000000
+      internalID: 5290948217429117677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_4
+      name: BossSlam_2
       rect:
         serializedVersion: 2
         x: 0
@@ -312,14 +264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68970b65004ce6b20800000000000000
-      internalID: 3129654296802523526
+      spriteID: 727340b8cc9460020800000000000000
+      internalID: 2307613001928423207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_5
+      name: BossSlam_3
       rect:
         serializedVersion: 2
         x: 0
@@ -333,14 +285,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f7bbe4513398bb10800000000000000
-      internalID: 1997508274826229753
+      spriteID: 97b50411c1e524f60800000000000000
+      internalID: 8017073761314429817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_6
+      name: BossSlam_4
       rect:
         serializedVersion: 2
         x: 0
@@ -354,14 +306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 761b9f3dcb90a5090800000000000000
-      internalID: -8045107077729111705
+      spriteID: 4adf4790bc22f44a0800000000000000
+      internalID: -6607023872896860764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_7
+      name: BossSlam_5
       rect:
         serializedVersion: 2
         x: 0
@@ -375,14 +327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca8f368d87728d7b0800000000000000
-      internalID: -5199362369819248468
+      spriteID: d42e2c60b409f1850800000000000000
+      internalID: 6349952651526070861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_8
+      name: BossSlam_6
       rect:
         serializedVersion: 2
         x: 0
@@ -396,14 +348,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ffeb0bfbecc64a90800000000000000
-      internalID: -7329946029597659149
+      spriteID: 9b41222b9a8ea2990800000000000000
+      internalID: -7409854421349034823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_9
+      name: BossSlam_7
       rect:
         serializedVersion: 2
         x: 0
@@ -417,14 +369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52cae8712b3bbf190800000000000000
-      internalID: -7927545141574849499
+      spriteID: 684777a8ab6035d90800000000000000
+      internalID: -7110331988431113082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_10
+      name: BossSlam_8
       rect:
         serializedVersion: 2
         x: 0
@@ -438,14 +390,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61eecfe355ed313e0800000000000000
-      internalID: -2084077744832057834
+      spriteID: 3b7f3c670c9eaa660800000000000000
+      internalID: 7397982350745008051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_11
+      name: BossSlam_9
       rect:
         serializedVersion: 2
         x: 0
@@ -459,14 +411,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dbb048bf30934eb0800000000000000
-      internalID: -4736783779715040298
+      spriteID: bdaa8746090206910800000000000000
+      internalID: 1828497253245430491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_12
+      name: BossSlam_10
       rect:
         serializedVersion: 2
         x: 0
@@ -480,14 +432,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4478dbeeba2bc25e0800000000000000
-      internalID: -1932973688534235324
+      spriteID: cfdd2c37d8861c440800000000000000
+      internalID: 4954356021826084348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_13
+      name: BossSlam_11
       rect:
         serializedVersion: 2
         x: 0
@@ -501,14 +453,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8957a6dbc967481d0800000000000000
-      internalID: -3349421807291959912
+      spriteID: 70dda13ae307d0200800000000000000
+      internalID: 147897777099824391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_14
+      name: BossSlam_12
       rect:
         serializedVersion: 2
         x: 0
@@ -522,14 +474,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eab8d003bf9d824a0800000000000000
-      internalID: -6617799979554731090
+      spriteID: 43fb6a10915d5e540800000000000000
+      internalID: 5036666061662371636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_15
+      name: BossSlam_13
       rect:
         serializedVersion: 2
         x: 0
@@ -543,14 +495,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d797c6f44ead34040800000000000000
-      internalID: 4630785515986909565
+      spriteID: f5d1dcb5a3a499a70800000000000000
+      internalID: 8834173758572666207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_16
+      name: BossSlam_14
       rect:
         serializedVersion: 2
         x: 0
@@ -564,14 +516,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ef54930f62419f00800000000000000
-      internalID: 1121750826760822753
+      spriteID: ce46ff3eabeab2930800000000000000
+      internalID: 4119578401872766188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_17
+      name: BossSlam_15
       rect:
         serializedVersion: 2
         x: 0
@@ -585,14 +537,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f2df45be49b99e80800000000000000
-      internalID: -8171296301186559244
+      spriteID: 6c55028d6102a29c0800000000000000
+      internalID: -3951310440576821818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_18
+      name: BossSlam_16
       rect:
         serializedVersion: 2
         x: 0
@@ -606,14 +558,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a65b04e930f19a10800000000000000
-      internalID: 1914575448038921895
+      spriteID: b3eb98b973feee4a0800000000000000
+      internalID: -6562044584920498629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_19
+      name: BossSlam_17
       rect:
         serializedVersion: 2
         x: 0
@@ -627,14 +579,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8b346577420a5970800000000000000
-      internalID: 8744304132428675981
+      spriteID: dec666d79fedc1290800000000000000
+      internalID: -7918208881692087059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_20
+      name: BossSlam_18
       rect:
         serializedVersion: 2
         x: 0
@@ -648,14 +600,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a9a146899b7db9b0800000000000000
-      internalID: -5062754506781906527
+      spriteID: 04c80c549bd9367f0800000000000000
+      internalID: -620478904582239168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_21
+      name: BossSlam_19
       rect:
         serializedVersion: 2
         x: 0
@@ -669,14 +621,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c2dc123c1b248f20800000000000000
-      internalID: 3423909016808248002
+      spriteID: 9d62f7d03050fdf10800000000000000
+      internalID: 2296559845651719897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_22
+      name: BossSlam_20
       rect:
         serializedVersion: 2
         x: 0
@@ -690,14 +642,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2939705e2b8ec680800000000000000
-      internalID: -8732889596389934804
+      spriteID: 97a76d3c390495ce0800000000000000
+      internalID: -1416029604441326983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_23
+      name: BossSlam_21
       rect:
         serializedVersion: 2
         x: 0
@@ -711,14 +663,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66868b33551ef2290800000000000000
-      internalID: -7912858264210479002
+      spriteID: 7d839c049d05a6be0800000000000000
+      internalID: -1483284233240102697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossbite-Sheet_24
+      name: BossSlam_22
       rect:
         serializedVersion: 2
         x: 0
@@ -732,8 +684,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c934e9351aec170800000000000000
-      internalID: 8200669351997840390
+      spriteID: 300b42347e4764730800000000000000
+      internalID: 3982999457068527619
       vertices: []
       indices: 
       edges: []

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Enemy;
 using UnityEngine;
+using Boss;
 
 namespace Player
 {
@@ -53,7 +54,15 @@ namespace Player
         {
             foreach (var enemy in enemiesNearby)
             {
-                enemy.GetComponent<EnemyHealth>().TakeDamage();
+                if (enemy.TryGetComponent(out EnemyHealth enemyHealth))
+                {
+                    enemyHealth.TakeDamage(5);
+                }
+                if (enemy.TryGetComponent(out BossHealth bossHealth))
+                {
+                    bossHealth.TakeDamage(5);
+                }
+                
                 print("I Attacked: " + enemy.transform.name);
                 
             }
@@ -72,16 +81,11 @@ namespace Player
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
-            if (m_Coyote.canCoyote)
-            {
-                Gizmos.DrawWireSphere(attackLocationGround.position, attackRangeGround);
-            }
-            else
-            {
-                if (m_Coyote.isDashing) return;
-                Gizmos.DrawWireSphere(attackLocationAir.position, attackRangeAir);
-            }
+            //ground
+            Gizmos.DrawWireSphere(attackLocationGround.position, attackRangeGround);
             
+            //Air
+            Gizmos.DrawWireSphere(attackLocationAir.position, attackRangeAir);
         }
     }
 }

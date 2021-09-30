@@ -13,7 +13,7 @@ namespace Player
         private PlayerAudio m_Audio;
         private PlayerColliders m_Colliders;
         private PlayerDash m_Dash;
-        private bool m_falling;
+        private bool m_Falling;
     
         private void Awake()
         {
@@ -37,7 +37,7 @@ namespace Player
             //On ground Run and 
             if (m_Coyote.canCoyote)
             {
-                m_falling = false;
+                m_Falling = false;
                 m_Animator.Play(m_Input.moveVector.x != 0 ? "Run" : "Idle");
             }
             else
@@ -52,7 +52,7 @@ namespace Player
                 }
                 else
                 {
-                    if (!m_falling)
+                    if (!m_Falling)
                     {
                         m_Animator.Play(stateName:"StartFalling");
                         //StartCoroutine(FallTimer());
@@ -68,7 +68,7 @@ namespace Player
         private void Falling()
         {
             if (m_Coyote.canCoyote) return;
-            m_falling = true;
+            m_Falling = true;
             m_Animator.Play(stateName:"Fall");
         } 
         /*

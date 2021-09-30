@@ -71,7 +71,7 @@ namespace Player
             }
         }
         
-        private void WalkingAudio()
+        public void WalkingAudio()
         {
             m_Audio.volume = 0.5f;
             m_Audio.pitch = Random.Range(0.5f, 1.5f);

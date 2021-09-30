@@ -1,76 +1,91 @@
 fileFormatVersion: 2
-guid: 0b7d47b648c51fb4188814b7fb597af8
+guid: 4b6a0617f43187840b2190573b6a606a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3966440224344125588
-    second: bossspike-Sheet_0
+      213: -1665668613978368847
+    second: bossdeath2_0
   - first:
-      213: -7282837063272538222
-    second: bossspike-Sheet_1
+      213: 867174762006314867
+    second: bossdeath2_1
   - first:
-      213: 5392553786254645430
-    second: bossspike-Sheet_2
+      213: 5584947171837138436
+    second: bossdeath2_2
   - first:
-      213: -2166288824810841407
-    second: bossspike-Sheet_3
+      213: -808977256830142746
+    second: bossdeath2_3
   - first:
-      213: -1920742906406279729
-    second: bossspike-Sheet_4
+      213: -2129408585584700753
+    second: bossdeath2_4
   - first:
-      213: -3939171240359269163
-    second: bossspike-Sheet_5
+      213: -4409584448833022060
+    second: bossdeath2_5
   - first:
-      213: -4101965631594249374
-    second: bossspike-Sheet_6
+      213: 7601138164388919973
+    second: bossdeath2_6
   - first:
-      213: 4662328512451279918
-    second: bossspike-Sheet_7
+      213: -5737762525606741359
+    second: bossdeath2_7
   - first:
-      213: -81726518091800083
-    second: bossspike-Sheet_8
+      213: -388706519887755643
+    second: bossdeath2_8
   - first:
-      213: 2629209964919660278
-    second: bossspike-Sheet_9
+      213: 3772319462594086530
+    second: bossdeath2_9
   - first:
-      213: 8480488889860748424
-    second: bossspike-Sheet_10
+      213: -7492776972419191552
+    second: bossdeath2_10
   - first:
-      213: 6879283613118669219
-    second: bossspike-Sheet_11
+      213: -1860530677664503404
+    second: bossdeath2_11
   - first:
-      213: -984750743904431556
-    second: bossspike-Sheet_12
+      213: 3593105180933867706
+    second: bossdeath2_12
   - first:
-      213: 6517537572799601536
-    second: bossspike-Sheet_13
+      213: -896835426626641770
+    second: bossdeath2_13
   - first:
-      213: -2642203782868075843
-    second: bossspike-Sheet_14
+      213: 7772027552749242094
+    second: bossdeath2_14
   - first:
-      213: -293434523757937479
-    second: bossspike-Sheet_15
+      213: 2221259957660617235
+    second: bossdeath2_15
   - first:
-      213: -1740249150965103735
-    second: bossspike-Sheet_16
+      213: -6594808660972549658
+    second: bossdeath2_16
   - first:
-      213: -2291887875364508628
-    second: bossspike-Sheet_17
+      213: -7173591805941660778
+    second: bossdeath2_17
   - first:
-      213: 3075976959569079304
-    second: bossspike-Sheet_18
+      213: 728754633701392322
+    second: bossdeath2_18
   - first:
-      213: 6655125050948803584
-    second: bossspike-Sheet_19
+      213: -4030386527634769074
+    second: bossdeath2_19
   - first:
-      213: 956216937173262264
-    second: bossspike-Sheet_20
+      213: 7712796436276238337
+    second: bossdeath2_20
   - first:
-      213: 2758779999958076399
-    second: bossspike-Sheet_21
+      213: 3886240144610262568
+    second: bossdeath2_21
   - first:
-      213: -6235113519679817118
-    second: bossspike-Sheet_22
+      213: 4114094622180997742
+    second: bossdeath2_22
+  - first:
+      213: -8150656885233460658
+    second: bossdeath2_23
+  - first:
+      213: -7401358208160008443
+    second: bossdeath2_24
+  - first:
+      213: -3701666246720921992
+    second: bossdeath2_25
+  - first:
+      213: 4320373078106740927
+    second: bossdeath2_26
+  - first:
+      213: 799888675976854765
+    second: bossdeath2_27
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +130,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 5
   spriteBorder: {x: 4, y: 4, z: 4, w: 4}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -208,12 +223,117 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bossspike-Sheet_0
+      name: bossdeath2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 160
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b45d4e783b52e8e0800000000000000
+      internalID: -1665668613978368847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdeath2_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1664
+        width: 160
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ff19ff9d2d80c00800000000000000
+      internalID: 867174762006314867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdeath2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 160
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406dcaaccd7b18d40800000000000000
+      internalID: 5584947171837138436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdeath2_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 160
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6f447987fe5c4f0800000000000000
+      internalID: -808977256830142746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdeath2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1472
+        width: 160
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa29e8a6c22d272e0800000000000000
+      internalID: -2129408585584700753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdeath2_5
       rect:
         serializedVersion: 2
         x: 0
         y: 1408
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -222,19 +342,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6fc52d81af54f8c0800000000000000
-      internalID: -3966440224344125588
+      spriteID: 49798388e420ec2c0800000000000000
+      internalID: -4409584448833022060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_1
+      name: bossdeath2_6
       rect:
         serializedVersion: 2
         x: 0
         y: 1344
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -243,19 +363,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29f579ee64a2eea90800000000000000
-      internalID: -7282837063272538222
+      spriteID: 5aaf01153eaac7960800000000000000
+      internalID: 7601138164388919973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_2
+      name: bossdeath2_7
       rect:
         serializedVersion: 2
         x: 0
         y: 1280
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -264,19 +384,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b855edf81336da40800000000000000
-      internalID: 5392553786254645430
+      spriteID: 19a79a7026f5f50b0800000000000000
+      internalID: -5737762525606741359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_3
+      name: bossdeath2_8
       rect:
         serializedVersion: 2
         x: 0
         y: 1216
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -285,19 +405,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ca50449acbcfe1e0800000000000000
-      internalID: -2166288824810841407
+      spriteID: 5864638ca790b9af0800000000000000
+      internalID: -388706519887755643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_4
+      name: bossdeath2_9
       rect:
         serializedVersion: 2
         x: 0
         y: 1152
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -306,19 +426,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc56dcec0862855e0800000000000000
-      internalID: -1920742906406279729
+      spriteID: 286863b8098f95430800000000000000
+      internalID: 3772319462594086530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_5
+      name: bossdeath2_10
       rect:
         serializedVersion: 2
         x: 0
         y: 1088
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -327,19 +447,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dc63f4a0a04559c0800000000000000
-      internalID: -3939171240359269163
+      spriteID: 00d2ab1ca0f440890800000000000000
+      internalID: -7492776972419191552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_6
+      name: bossdeath2_11
       rect:
         serializedVersion: 2
         x: 0
         y: 1024
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -348,19 +468,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 263c6ffbdf3e217c0800000000000000
-      internalID: -4101965631594249374
+      spriteID: 4992718c4311e26e0800000000000000
+      internalID: -1860530677664503404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_7
+      name: bossdeath2_12
       rect:
         serializedVersion: 2
         x: 0
         y: 960
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -369,19 +489,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2c75da741be3b040800000000000000
-      internalID: 4662328512451279918
+      spriteID: ab8cd2eff164dd130800000000000000
+      internalID: 3593105180933867706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_8
+      name: bossdeath2_13
       rect:
         serializedVersion: 2
         x: 0
         y: 896
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -390,19 +510,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de1a8603a26addef0800000000000000
-      internalID: -81726518091800083
+      spriteID: 690eeed5eeccd83f0800000000000000
+      internalID: -896835426626641770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_9
+      name: bossdeath2_14
       rect:
         serializedVersion: 2
         x: 0
         y: 832
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -411,19 +531,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fe14fe6884dc7420800000000000000
-      internalID: 2629209964919660278
+      spriteID: ee6ca2a91e9cbdb60800000000000000
+      internalID: 7772027552749242094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_10
+      name: bossdeath2_15
       rect:
         serializedVersion: 2
         x: 0
         y: 768
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -432,19 +552,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 884fbc9b6bfb0b570800000000000000
-      internalID: 8480488889860748424
+      spriteID: 31a092aa92083de10800000000000000
+      internalID: 2221259957660617235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_11
+      name: bossdeath2_16
       rect:
         serializedVersion: 2
         x: 0
         y: 704
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -453,19 +573,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a1aa158fff187f50800000000000000
-      internalID: 6879283613118669219
+      spriteID: 6e9cf01b6788a74a0800000000000000
+      internalID: -6594808660972549658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_12
+      name: bossdeath2_17
       rect:
         serializedVersion: 2
         x: 0
         y: 640
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -474,19 +594,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3256457a667552f0800000000000000
-      internalID: -984750743904431556
+      spriteID: 693c1338248427c90800000000000000
+      internalID: -7173591805941660778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_13
+      name: bossdeath2_18
       rect:
         serializedVersion: 2
         x: 0
         y: 576
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -495,19 +615,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08b5bfc14e1f27a50800000000000000
-      internalID: 6517537572799601536
+      spriteID: 2cff03e6a7e0d1a00800000000000000
+      internalID: 728754633701392322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_14
+      name: bossdeath2_19
       rect:
         serializedVersion: 2
         x: 0
         y: 512
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -516,19 +636,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dba74f198a1055bd0800000000000000
-      internalID: -2642203782868075843
+      spriteID: e4b3fc89ec03118c0800000000000000
+      internalID: -4030386527634769074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_15
+      name: bossdeath2_20
       rect:
         serializedVersion: 2
         x: 0
         y: 448
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -537,19 +657,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bc7296fad28debf0800000000000000
-      internalID: -293434523757937479
+      spriteID: 108d421ae7b590b60800000000000000
+      internalID: 7712796436276238337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_16
+      name: bossdeath2_21
       rect:
         serializedVersion: 2
         x: 0
         y: 384
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -558,19 +678,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 983cc001e9469d7e0800000000000000
-      internalID: -1740249150965103735
+      spriteID: 82e7b5342d2bee530800000000000000
+      internalID: 3886240144610262568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_17
+      name: bossdeath2_22
       rect:
         serializedVersion: 2
         x: 0
         y: 320
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -579,19 +699,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2cafdbce149130e0800000000000000
-      internalID: -2291887875364508628
+      spriteID: e6a717fe243381930800000000000000
+      internalID: 4114094622180997742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_18
+      name: bossdeath2_23
       rect:
         serializedVersion: 2
         x: 0
         y: 256
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -600,19 +720,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80ca66c5fb010ba20800000000000000
-      internalID: 3075976959569079304
+      spriteID: e4a51953fbc03ee80800000000000000
+      internalID: -8150656885233460658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_19
+      name: bossdeath2_24
       rect:
         serializedVersion: 2
         x: 0
         y: 192
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -621,19 +741,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00c5b9539f0cb5c50800000000000000
-      internalID: 6655125050948803584
+      spriteID: 507733b7ce7194990800000000000000
+      internalID: -7401358208160008443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_20
+      name: bossdeath2_25
       rect:
         serializedVersion: 2
         x: 0
         y: 128
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -642,19 +762,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf9c64fc3a254d00800000000000000
-      internalID: 956216937173262264
+      spriteID: 87e552f292a01acc0800000000000000
+      internalID: -3701666246720921992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_21
+      name: bossdeath2_26
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -663,19 +783,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: feb04f61bc7294620800000000000000
-      internalID: 2758779999958076399
+      spriteID: fb896b99c6c05fb30800000000000000
+      internalID: 4320373078106740927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bossspike-Sheet_22
+      name: bossdeath2_27
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
+        width: 160
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -684,8 +804,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26abf35f94d6879a0800000000000000
-      internalID: -6235113519679817118
+      spriteID: dec35774386c91b00800000000000000
+      internalID: 799888675976854765
       vertices: []
       indices: 
       edges: []
