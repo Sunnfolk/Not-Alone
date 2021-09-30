@@ -1,35 +1,63 @@
-using System;
-using Player;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerDeath : MonoBehaviour
+namespace Player
 {
-    private PlayerHealth _health;
-
-    private void Start()
+    public class PlayerDeath : MonoBehaviour
     {
-        _health = GetComponent<PlayerHealth>();
-    }
+        private PlayerHealth m_Health;
+        private MaxVelocity m_Velocity;
+        [SerializeField] private float velocityTimer = 5;
+        private float m_VelocityTime;
 
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.tag == "Death")
+        private void Start()
         {
-            if (_health.health <= 0)
+            m_Health = GetComponent<PlayerHealth>();
+            m_Velocity = GetComponent<MaxVelocity>();
+            m_VelocityTime = velocityTimer;
+        }
+
+        private void Update()
+        {
+            if (m_Health.health <= 0)
             {
                 RestartScene();
+            }
+
+            if (m_Velocity.atMaxVelocity)
+            {
+                if (m_VelocityTime >= 0)
+                {
+                    m_VelocityTime -= Time.deltaTime;
+                }
+                else
+                {
+                    RestartScene();
+                }
+            }
+            else
+            {
+                velocityTimer = m_VelocityTime;
             }
             
         }
 
-        if (col.gameObject.tag == "DeathZone")
+        void OnTriggerEnter2D(Collider2D collider)
         {
-            RestartScene();
+            if (collider.gameObject.CompareTag("Death"))
+            {
+                
+            
+            }
+
+            if (collider.gameObject.CompareTag("DeathZone"))
+            {
+                RestartScene();
+            }
         }
-    }
-    private void RestartScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        private void RestartScene()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

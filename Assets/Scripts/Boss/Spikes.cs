@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,33 +9,64 @@ public class Spikes : MonoBehaviour
 {
     [SerializeField] public GameObject[] spike;
     public List<float> timers;
+    private float timerTime = 0;
+    public int spikeLength = 0;
+
+    public bool go;
+    public Animator _boss;
 
     private void Update()
     {
-        if (Keyboard.current.pKey.wasPressedThisFrame)
+        if (spikeLength < spike.Length)
         {
-            foreach (var Ga  in spike)
+            if (timerTime >= 0 && go)
             {
-                Ga.SetActive(true);
-                
-                gameObject.TryGetComponent(out Animator anim);
-                anim.Play("SpikeAnimation");
-                float time = anim.GetCurrentAnimatorClipInfo(0).Length;
-                timers.Add(time);
+                timerTime -= 1 * Time.deltaTime;
+
+                print("FinishCount");
+            }
+            else if (timerTime <= 0 && go)
+            {
+                spikeLength++;
+                print("Restart");
+                AnimationSetTimer();
             }
         }
-
-        for (int i = 0; i < timers.Count; i++)
+        else if (spikeLength >= spike.Length && timerTime <= 0)
         {
-            if (timers[i] > 0f)
+            go = false;
+            foreach (var obj in spike)
             {
-                timers[i] -= 1 * Time.deltaTime;
+                obj.SetActive(false);
+                
             }
-            else
-            {
-                print(timers);
-                spike[i].SetActive(false);
-            }
+            _boss.SetTrigger("Spikes");
+        }
+    }
+
+    private void StartSpikes()
+    {
+        spikeLength = 0;
+        AnimationSetTimer();
+        go = true;
+       
+    }
+
+    private void AnimationSetTimer()
+    {
+        spike[spikeLength].SetActive(true);
+        spike[spikeLength].TryGetComponent(out Animator anim);
+        anim.Play("SpikeAnimation");
+        
+        timerTime = anim.GetCurrentAnimatorClipInfo(0).Length;
+        
+        if (spikeLength >= spike.Length-1)
+        {
+            timerTime += 1f;
+        }
+        else
+        {
+            timerTime /= 1.5f;
         }
     }
 }

@@ -10,6 +10,7 @@ namespace Player
         
         private Rigidbody2D m_Rigidbody2D;
         private PlayerColliders m_Colliders;
+        public bool atMaxVelocity;
         private void Awake()
         {
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -19,6 +20,12 @@ namespace Player
         private void Update()
         {
             SetMaxVelocity();
+            if (m_Rigidbody2D)
+            {
+                
+            }
+            atMaxVelocity = m_Rigidbody2D.velocity.y >= -maxVelocity - 1;
+            print("MaxVelocity = " + atMaxVelocity);
         }
 
         private void SetMaxVelocity()
