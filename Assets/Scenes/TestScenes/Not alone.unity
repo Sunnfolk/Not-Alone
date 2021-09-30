@@ -1348,6 +1348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8948205796642476378, guid: 2a9a18b61e00e0a488a0e61410f216c5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.44
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a9a18b61e00e0a488a0e61410f216c5, type: 3}
 --- !u!1 &1347364983
@@ -2187,23 +2191,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1391202618 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5358296954042381853, guid: 85870a0892b8ca4489b65b670472827e, type: 3}
-  m_PrefabInstance: {fileID: 1808359041}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1391202621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391202618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a3c14a6351521e4ea41f7a6b99a9075, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1533974963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2215,6 +2202,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 2c66f56126dc9c743bf63c66f69d9fcd, type: 2}
+    - target: {fileID: 5736888678450705612, guid: 84c8d46c29c423143898b21d3178db9a, type: 3}
+      propertyPath: m_GravityScale
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5736888678450705613, guid: 84c8d46c29c423143898b21d3178db9a, type: 3}
       propertyPath: m_FlipX
       value: 0

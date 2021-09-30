@@ -35,7 +35,7 @@ namespace WorldSystems
                 CinemachineBasicMultiChannelPerlin cinemachineBasicMultiChannelPerlin =
                     m_Cinemachine.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
                 cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 0f;
-            }
+            }   
         }
     }
 }
