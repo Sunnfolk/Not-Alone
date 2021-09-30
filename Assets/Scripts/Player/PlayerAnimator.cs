@@ -20,7 +20,8 @@ namespace Player
         private bool m_Attack1;
         private bool m_Attack2;
 
-        private bool m_Attacking = false;
+        public bool m_Attacking = false;
+        
 
         private void Awake()
         {

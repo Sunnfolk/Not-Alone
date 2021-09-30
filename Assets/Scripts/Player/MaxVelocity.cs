@@ -20,11 +20,11 @@ namespace Player
         private void Update()
         {
             SetMaxVelocity();
-            if (m_Rigidbody2D)
+            if (m_Rigidbody2D.velocity.y < -maxVelocity)
             {
-                
+                atMaxVelocity = true;
             }
-            atMaxVelocity = m_Rigidbody2D.velocity.y >= -maxVelocity - 1;
+                
             print("MaxVelocity = " + atMaxVelocity);
         }
 

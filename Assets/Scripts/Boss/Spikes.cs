@@ -40,6 +40,7 @@ public class Spikes : MonoBehaviour
                 obj.SetActive(false);
                 
             }
+            print("I won't work because im POOOOR");
             _boss.SetTrigger("Spikes");
         }
     }
@@ -62,11 +63,11 @@ public class Spikes : MonoBehaviour
         
         if (spikeLength >= spike.Length-1)
         {
-            timerTime += 1f;
+            timerTime += 0.7f;
         }
         else
         {
-            timerTime /= 1.5f;
+            timerTime /= 4f;
         }
     }
 }

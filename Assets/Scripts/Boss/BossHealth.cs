@@ -20,7 +20,7 @@ namespace Boss
         private void Update()
         {
             
-            print("Boss Health = " + enemyHealth);
+            //print("Boss Health = " + enemyHealth);
             healthBar.value = enemyHealth;
             
             

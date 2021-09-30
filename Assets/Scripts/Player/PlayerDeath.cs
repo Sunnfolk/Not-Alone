@@ -26,6 +26,7 @@ namespace Player
 
             if (m_Velocity.atMaxVelocity)
             {
+                print("At max velocity");
                 if (m_VelocityTime >= 0)
                 {
                     m_VelocityTime -= Time.deltaTime;
@@ -46,8 +47,7 @@ namespace Player
         {
             if (collider.gameObject.CompareTag("Death"))
             {
-                
-            
+                RestartScene();
             }
 
             if (collider.gameObject.CompareTag("DeathZone"))
