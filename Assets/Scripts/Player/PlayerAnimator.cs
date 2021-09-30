@@ -32,7 +32,7 @@ namespace Player
             if (m_Input.moveVector.x != 0)
             {
                 if (m_Coyote.isDashing) return;
-                transform.localScale = new Vector2(m_Input.moveVector.x * 2f, 2f);
+                transform.localScale = new Vector2(m_Input.moveVector.x, 1f);
             }
             //On ground Run and 
             if (m_Coyote.canCoyote)
@@ -42,8 +42,9 @@ namespace Player
             }
             else
             {
-                if (m_Coyote.isDashing)
+                if (m_Input.dash)
                 {
+                    print("DashAnimation");
                     m_Animator.Play(stateName:"Dash");
                 }
                 else if (m_Rigidbody2D.velocity.y > 0 )
@@ -58,7 +59,7 @@ namespace Player
                         //StartCoroutine(FallTimer());
                     }
                     else
-                    {
+                    {   
                         Falling();
                     }
                 }
