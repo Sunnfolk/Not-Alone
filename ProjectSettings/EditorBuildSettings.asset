@@ -6,15 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/TestScenes/TestSceneJulian.unity
     guid: 07c87549df852ee47af45107da3f4f86
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/TestSceneOddSimen.unity
     guid: d828b07aebab5854a80a47919746853d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/TestSceneAslak.unity
     guid: 0d5469bc2b8813e459f01e30f9be5eec
+  - enabled: 1
+    path: Assets/Scenes/Story Scenes/Starting Scene.unity
+    guid: 78f18fe82ab522f4eb1e694112d2b307
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: f3b2d27bad2ed0545b68ed56061b5575
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 6f419cf54ae854d888813a5455971b3f
+  - enabled: 1
+    path: Assets/Scenes/BossLevel.unity
+    guid: 06b7ba02ee802174289ff7268ca0bf87
+  - enabled: 1
+    path: Assets/Scenes/Story Scenes/End Scene.unity
+    guid: dcbea86ee68b4144da433bc380776b94
+  - enabled: 1
+    path: Assets/Scenes/Story Scenes/Credits.unity
+    guid: d4dc417a43580a043bcc6188b7a04a91
   m_configObjects: {}
