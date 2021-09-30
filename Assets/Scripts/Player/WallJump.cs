@@ -34,14 +34,14 @@ namespace Player
         void Update()
         {
             var position = gameObject.transform.position;
-            isGrounded = Physics2D.OverlapBox(new Vector2((position.x), (float) (position.y - 0.725)),
+            isGrounded = Physics2D.OverlapBox(new Vector2((position.x), (float) (position.y - 9)),
                 new Vector2(0.15f, 0.8f), 0f, groundMask);
         
             isTouchingLeft = Physics2D.OverlapBox(new Vector2( (position.x - 0.5f), (position.y)),
                 new Vector2(0.2f, 1.25f), 0f, groundMask);
             
 
-            isTouchingRight = Physics2D.OverlapBox(new Vector2( (position.x + 0.5f), (position.y)),
+            isTouchingRight = Physics2D.OverlapBox(new Vector2( (position.x + 0.325f), (position.y)),
                 new Vector2(0.2f, 1.25f), 0f, groundMask);
             
             
@@ -69,7 +69,7 @@ namespace Player
             if (isTouchingLeft || isTouchingRight && !isGrounded)
             {
                 wallSliding = true;
-                //WallSlide();
+                WallSlide();
             }
             
 
@@ -82,13 +82,13 @@ namespace Player
         {
             Gizmos.color = Color.yellow;
             var position = gameObject.transform.position;
-            Gizmos.DrawCube(new Vector2(position.x,  (float) (position.y - 0.725)),
+            Gizmos.DrawCube(new Vector2(position.x,  (float) (position.y - 0.9)),
                 new Vector2(0.9f, 0.2f));
             
             Gizmos.color = Color.blue;
             Gizmos.DrawCube(new Vector2(position.x - 0.5f, position.y),
                 new Vector2(0.25f, 1.25f));
-            Gizmos.DrawCube(new Vector2( (position.x + 0.5f), (position.y)),
+            Gizmos.DrawCube(new Vector2( (position.x + 0.325f), (position.y)),
                 new Vector2(0.25f, 1.25f));
            
         }

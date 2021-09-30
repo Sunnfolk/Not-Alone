@@ -43,7 +43,7 @@ namespace Player
         {
             for (int i = 0; i < hearts.Length; i++)
             {
-                if (i < numberOfHearts)
+                if (i < health)
                 {
                     hearts[i].enabled = true;
                 }
@@ -52,9 +52,7 @@ namespace Player
                     hearts[i].enabled = false;
                 }
             }
-            
             print("Player Health = " + health);
-            
         }
 
         private void Damage()
@@ -73,3 +71,4 @@ namespace Player
         }
     }
 }
+

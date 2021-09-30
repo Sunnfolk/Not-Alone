@@ -1,103 +1,58 @@
 fileFormatVersion: 2
-guid: 3bc80b65f60677e498e80aaa3e9db980
+guid: d34619569e18be14386eb0794a95f0ef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7228618932070714749
-    second: player_Fall2sT-Sheet_0
+      213: -2967250449781912907
+    second: player_Fall-Sheet_0
   - first:
-      213: -2528290463961261173
-    second: player_Fall2sT-Sheet_1
+      213: -8030614057307192356
+    second: player_Fall-Sheet_1
   - first:
-      213: -7208307807472401073
-    second: player_Fall2sT-Sheet_2
+      213: -7963771926025941732
+    second: player_Fall-Sheet_2
   - first:
-      213: -8402559103368534711
-    second: player_Fall2sT-Sheet_3
+      213: -6308080296553765293
+    second: player_Fall-Sheet_3
   - first:
-      213: -8860309328634945782
-    second: player_Fall2sT-Sheet_4
+      213: -38688647208968461
+    second: player_Fall-Sheet_4
   - first:
-      213: -4244026404636614292
-    second: player_Fall2sT-Sheet_5
+      213: -2934321680257385281
+    second: player_Fall-Sheet_5
   - first:
-      213: 508591715825662441
-    second: Falling_0
+      213: 929944456001068940
+    second: player_Fall-Sheet_6
   - first:
-      213: 1996277581079447406
-    second: Falling_1
+      213: -3164972162463129748
+    second: player_Fall-Sheet_7
   - first:
-      213: 2370214711298654797
-    second: Falling_2
+      213: -2135333902912330019
+    second: player_Fall-Sheet_8
   - first:
-      213: 7221865282303073093
-    second: Falling_3
+      213: -1196971979080506111
+    second: player_Fall-Sheet_9
   - first:
-      213: 5206758073216523586
-    second: Falling_4
+      213: -366626267836366497
+    second: player_Fall-Sheet_10
   - first:
-      213: 1504680996533710940
-    second: Falling_5
+      213: 7050679708926466495
+    second: player_Fall-Sheet_11
   - first:
-      213: 5001140148347507865
-    second: Falling_6
+      213: -3588512495438925714
+    second: player_Fall-Sheet_12
   - first:
-      213: -3666347543479943236
-    second: Falling_7
+      213: -3992050582238943199
+    second: player_Fall-Sheet_13
   - first:
-      213: -2334275118317344405
-    second: Falling_8
+      213: -6111570536948336666
+    second: player_Fall-Sheet_14
   - first:
-      213: 2022590396507470351
-    second: Falling_9
+      213: -6172746526383099569
+    second: player_Fall-Sheet_15
   - first:
-      213: 5956543489658324461
-    second: Falling_10
-  - first:
-      213: 1189313457331346280
-    second: Falling_11
-  - first:
-      213: 923308985531034718
-    second: Falling_12
-  - first:
-      213: -2440795769578898748
-    second: Falling_13
-  - first:
-      213: -5237104442069978230
-    second: Falling_14
-  - first:
-      213: -1537500647573972827
-    second: Falling_15
-  - first:
-      213: -1254065809244192848
-    second: Falling_16
-  - first:
-      213: 1683598806556991157
-    second: Falling_17
-  - first:
-      213: -4199177187280733574
-    second: Falling_18
-  - first:
-      213: 1953464683926900144
-    second: Falling_19
-  - first:
-      213: -1097659738943654839
-    second: Falling_20
-  - first:
-      213: 3861175508086600831
-    second: Falling_21
-  - first:
-      213: 2276713060838041325
-    second: Falling_22
-  - first:
-      213: -7015148990601289759
-    second: Falling_23
-  - first:
-      213: 7807251492360658010
-    second: Falling_24
-  - first:
-      213: 2163525677247391062
-    second: Falling_25
+      213: -6728591032304844576
+    second: player_Fall-Sheet_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -235,7 +190,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Falling_0
+      name: player_Fall-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -249,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e9be7d8871ee0700800000000000000
-      internalID: 508591715825662441
+      spriteID: 5ba8125ef6532d6d0800000000000000
+      internalID: -2967250449781912907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_1
+      name: player_Fall-Sheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -270,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e67015d12e334bb10800000000000000
-      internalID: 1996277581079447406
+      spriteID: cd342f910178d8090800000000000000
+      internalID: -8030614057307192356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_2
+      name: player_Fall-Sheet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -291,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d428c54d8b1b4e020800000000000000
-      internalID: 2370214711298654797
+      spriteID: c1dcefc80affa7190800000000000000
+      internalID: -7963771926025941732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_3
+      name: player_Fall-Sheet_3
       rect:
         serializedVersion: 2
         x: 96
@@ -312,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54b966f0638393460800000000000000
-      internalID: 7221865282303073093
+      spriteID: 356a54554623578a0800000000000000
+      internalID: -6308080296553765293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_4
+      name: player_Fall-Sheet_4
       rect:
         serializedVersion: 2
         x: 128
@@ -333,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24dd77981ee124840800000000000000
-      internalID: 5206758073216523586
+      spriteID: 3fed44e51ec867ff0800000000000000
+      internalID: -38688647208968461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_5
+      name: player_Fall-Sheet_5
       rect:
         serializedVersion: 2
         x: 160
@@ -354,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c503caae463b1e410800000000000000
-      internalID: 1504680996533710940
+      spriteID: fbcf78f7af13747d0800000000000000
+      internalID: -2934321680257385281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_6
+      name: player_Fall-Sheet_6
       rect:
         serializedVersion: 2
         x: 192
@@ -375,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 994923eb77e976540800000000000000
-      internalID: 5001140148347507865
+      spriteID: c8f99c04e83d7ec00800000000000000
+      internalID: 929944456001068940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_7
+      name: player_Fall-Sheet_7
       rect:
         serializedVersion: 2
         x: 224
@@ -396,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbf70c795548e1dc0800000000000000
-      internalID: -3666347543479943236
+      spriteID: c6f92644692c314d0800000000000000
+      internalID: -3164972162463129748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_8
+      name: player_Fall-Sheet_8
       rect:
         serializedVersion: 2
         x: 256
@@ -417,14 +372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6969acb52dfa9fd0800000000000000
-      internalID: -2334275118317344405
+      spriteID: dd6ef08f025cd52e0800000000000000
+      internalID: -2135333902912330019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_9
+      name: player_Fall-Sheet_9
       rect:
         serializedVersion: 2
         x: 288
@@ -438,14 +393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0ab1fddf3fa11c10800000000000000
-      internalID: 2022590396507470351
+      spriteID: 1056fcca350836fe0800000000000000
+      internalID: -1196971979080506111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_10
+      name: player_Fall-Sheet_10
       rect:
         serializedVersion: 2
         x: 320
@@ -459,14 +414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de50046aeb4e9a250800000000000000
-      internalID: 5956543489658324461
+      spriteID: f5149441a5b79eaf0800000000000000
+      internalID: -366626267836366497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_11
+      name: player_Fall-Sheet_11
       rect:
         serializedVersion: 2
         x: 352
@@ -480,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86b93d6c94a418010800000000000000
-      internalID: 1189313457331346280
+      spriteID: fb9dd93d6db09d160800000000000000
+      internalID: 7050679708926466495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_12
+      name: player_Fall-Sheet_12
       rect:
         serializedVersion: 2
         x: 384
@@ -501,14 +456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5ce08461a040dc00800000000000000
-      internalID: 923308985531034718
+      spriteID: e60ff4de5ea033ec0800000000000000
+      internalID: -3588512495438925714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_13
+      name: player_Fall-Sheet_13
       rect:
         serializedVersion: 2
         x: 416
@@ -522,14 +477,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ca39f0fd2d802ed0800000000000000
-      internalID: -2440795769578898748
+      spriteID: 128a14075236998c0800000000000000
+      internalID: -3992050582238943199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_14
+      name: player_Fall-Sheet_14
       rect:
         serializedVersion: 2
         x: 448
@@ -543,14 +498,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a837cced1411257b0800000000000000
-      internalID: -5237104442069978230
+      spriteID: 6e773752af65f2ba0800000000000000
+      internalID: -6111570536948336666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_15
+      name: player_Fall-Sheet_15
       rect:
         serializedVersion: 2
         x: 480
@@ -564,14 +519,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a89b6b9e43b9aae0800000000000000
-      internalID: -1537500647573972827
+      spriteID: f41b8662dbff55aa0800000000000000
+      internalID: -6172746526383099569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Falling_16
+      name: player_Fall-Sheet_16
       rect:
         serializedVersion: 2
         x: 512
@@ -585,197 +540,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bf79037ac9a89ee0800000000000000
-      internalID: -1254065809244192848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Falling_17
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bed919c1385d5710800000000000000
-      internalID: 1683598806556991157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Falling_18
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7a353ba89689b5c0800000000000000
-      internalID: -4199177187280733574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Falling_19
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bdcbb6b7c91c1b10800000000000000
-      internalID: 1953464683926900144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Falling_20
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 944f308784454c0f0800000000000000
-      internalID: -1097659738943654839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Falling_21
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f74b0fecaa6a59530800000000000000
-      internalID: 3861175508086600831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Falling_22
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de66ebe5772889f10800000000000000
-      internalID: 2276713060838041325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Falling_23
-      rect:
-        serializedVersion: 2
-        x: 736
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ef15c0392f25ae90800000000000000
-      internalID: -7015148990601289759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Falling_24
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5c9b422edde85c60800000000000000
-      internalID: 7807251492360658010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Falling_25
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65564cef323660e10800000000000000
-      internalID: 2163525677247391062
+      spriteID: 0e047901b1e3f92a0800000000000000
+      internalID: -6728591032304844576
       vertices: []
       indices: 
       edges: []
