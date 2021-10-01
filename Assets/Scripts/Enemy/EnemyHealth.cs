@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Enemy
@@ -5,7 +6,12 @@ namespace Enemy
     public class EnemyHealth : MonoBehaviour
     {
         [SerializeField] public int enemyHealth = 3;
-        public GameObject enemy;
+        private GameObject enemy;
+
+        private void Start()
+        {
+            enemy = gameObject;
+        }
 
         private void Update()
         {

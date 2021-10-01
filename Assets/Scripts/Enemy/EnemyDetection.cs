@@ -4,7 +4,7 @@ namespace Enemy
 {
     public class EnemyDetection : MonoBehaviour
     {
-        [SerializeField] private Transform player;
+        private Transform player;
         [SerializeField] private float agroRange;
         [SerializeField] private float moveSpeed;
 

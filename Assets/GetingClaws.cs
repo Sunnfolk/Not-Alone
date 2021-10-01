@@ -8,6 +8,7 @@ public class GetingClaws : StateMachineBehaviour
 {
     private PlayerAnimator m_PlayerAnimator;
     private PlayerInput m_Input;
+    
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
