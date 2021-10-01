@@ -1,70 +1,85 @@
 fileFormatVersion: 2
-guid: ede01f16973dd514c8aaba5a5048b241
+guid: 4b24d5e68234fb64481e69dd49ff8b3a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7252756667728790062
-    second: player_Attack-Sheet_0
+      213: -3751699707391218441
+    second: Tileset_asome_bossndlvl._0
   - first:
-      213: 4580807071255604875
-    second: player_Attack-Sheet_1
+      213: -7042257914239024818
+    second: Tileset_asome_bossndlvl._1
   - first:
-      213: 892124912959168221
-    second: player_Attack-Sheet_2
+      213: -5015166488740236654
+    second: Tileset_asome_bossndlvl._2
   - first:
-      213: -5330562490819017501
-    second: player_Attack-Sheet_3
+      213: -734224023099953340
+    second: Tileset_asome_bossndlvl._3
   - first:
-      213: -545227745292831440
-    second: player_Attack-Sheet_4
+      213: -8857699839867457160
+    second: Tileset_asome_bossndlvl._4
   - first:
-      213: -2367009951301147937
-    second: player_Attack-Sheet_5
+      213: -8211959285682119
+    second: Tileset_asome_bossndlvl._5
   - first:
-      213: 7220660602916103447
-    second: player_Attack-Sheet_6
+      213: -5498800957768833537
+    second: Tileset_asome_bossndlvl._6
   - first:
-      213: 3412697304734360442
-    second: player_Attack-Sheet_7
+      213: -6372486945373610326
+    second: Tileset_asome_bossndlvl._7
   - first:
-      213: -2057037256822213640
-    second: player_Attack-Sheet_8
+      213: -8939386432592585748
+    second: Tileset_asome_bossndlvl._8
   - first:
-      213: 6301802490221405924
-    second: player_Attack-Sheet_9
+      213: -2788146871961097061
+    second: Tileset_asome_bossndlvl._9
   - first:
-      213: -4652988609500676043
-    second: player_Attack-Sheet_10
+      213: -1751942791926138856
+    second: Tileset_asome_bossndlvl._10
   - first:
-      213: 3691627301787415182
-    second: player_Attack-Sheet_11
+      213: 1007542165237529445
+    second: Tileset_asome_bossndlvl._11
   - first:
-      213: -3336278097116813861
-    second: player_Attack-Sheet_12
+      213: 7869564000650238547
+    second: Tileset_asome_bossndlvl._12
   - first:
-      213: 6338177161163837082
-    second: player_Attack-Sheet_13
+      213: 5419926124872291724
+    second: Tileset_asome_bossndlvl._13
   - first:
-      213: 2525838618027031832
-    second: player_Attack-Sheet_14
+      213: 514627728677279657
+    second: Tileset_asome_bossndlvl._14
   - first:
-      213: 7107620226732804820
-    second: player_Attack-Sheet_15
+      213: 5066748303308909838
+    second: Tileset_asome_bossndlvl._15
   - first:
-      213: 5547532769541369264
-    second: player_Attack-Sheet_16
+      213: 8690149898887314235
+    second: Tileset_asome_bossndlvl._16
   - first:
-      213: 4917408675596168389
-    second: player_Attack-Sheet_17
+      213: 5952041100259702366
+    second: Tileset_asome_bossndlvl._17
   - first:
-      213: -6948414037829986809
-    second: player_Attack-Sheet_18
+      213: -5720064745215397989
+    second: Tileset_asome_bossndlvl._18
   - first:
-      213: -8733684950778848630
-    second: player_Attack-Sheet_19
+      213: -6965935280188716169
+    second: Tileset_asome_bossndlvl._19
   - first:
-      213: 397418911328926621
-    second: player_Attack-Sheet_20
+      213: -2120246251834916602
+    second: Tileset_asome_bossndlvl._20
+  - first:
+      213: -6004594922740525431
+    second: Tileset_asome_bossndlvl._21
+  - first:
+      213: 1845207745051401546
+    second: Tileset_asome_bossndlvl._22
+  - first:
+      213: 6852357957968170403
+    second: Tileset_asome_bossndlvl._23
+  - first:
+      213: -8573696802707811563
+    second: Tileset_asome_bossndlvl._24
+  - first:
+      213: -1190357499778456185
+    second: Tileset_asome_bossndlvl._25
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +124,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 4, y: 4, z: 4, w: 4}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -202,32 +217,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_Attack-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ddfda9cc38095b90800000000000000
-      internalID: -7252756667728790062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_Attack-Sheet_1
+      name: Tileset_asome_bossndlvl._0
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -237,18 +231,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8ea9cad2cb429f30800000000000000
-      internalID: 4580807071255604875
+      spriteID: 7fc62055ef84febc0800000000000000
+      internalID: -3751699707391218441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_2
+      name: Tileset_asome_bossndlvl._1
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -258,60 +252,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dde1534b1e6716c00800000000000000
-      internalID: 892124912959168221
+      spriteID: e41891d0dbfd44e90800000000000000
+      internalID: -7042257914239024818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e406b938a90606b0800000000000000
-      internalID: -5330562490819017501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_Attack-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03532202146fe68f0800000000000000
-      internalID: -545227745292831440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_Attack-Sheet_5
+      name: Tileset_asome_bossndlvl._2
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -321,18 +273,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd261e08df0b62fd0800000000000000
-      internalID: -2367009951301147937
+      spriteID: 292f13566ac866ab0800000000000000
+      internalID: -5015166488740236654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_6
+      name: Tileset_asome_bossndlvl._3
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -342,18 +294,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 715e878cf80f43460800000000000000
-      internalID: 7220660602916103447
+      spriteID: 44fa19d14238fc5f0800000000000000
+      internalID: -734224023099953340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_7
+      name: Tileset_asome_bossndlvl._4
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -363,18 +315,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a73ef9e0e165c5f20800000000000000
-      internalID: 3412697304734360442
+      spriteID: 8717aadfce0231580800000000000000
+      internalID: -8857699839867457160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_8
+      name: Tileset_asome_bossndlvl._5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
+        x: 32
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -384,18 +336,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f33e59738fe373e0800000000000000
-      internalID: -2057037256822213640
+      spriteID: 930fddb3443d2eff0800000000000000
+      internalID: -8211959285682119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_9
+      name: Tileset_asome_bossndlvl._6
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
+        x: 64
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -405,18 +357,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e6a15af9ff747750800000000000000
-      internalID: 6301802490221405924
+      spriteID: ff56c9da9a550b3b0800000000000000
+      internalID: -5498800957768833537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_10
+      name: Tileset_asome_bossndlvl._7
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -426,18 +378,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53006c223834d6fb0800000000000000
-      internalID: -4652988609500676043
+      spriteID: aae1135d2e06097a0800000000000000
+      internalID: -6372486945373610326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_11
+      name: Tileset_asome_bossndlvl._8
       rect:
         serializedVersion: 2
-        x: 352
-        y: 0
+        x: 224
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -447,18 +399,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e823c2ec87b4b3330800000000000000
-      internalID: 3691627301787415182
+      spriteID: ceb5f57076be0f380800000000000000
+      internalID: -8939386432592585748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_12
+      name: Tileset_asome_bossndlvl._9
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -468,18 +420,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd5af6d3fb823b1d0800000000000000
-      internalID: -3336278097116813861
+      spriteID: b9c642331338e49d0800000000000000
+      internalID: -2788146871961097061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_13
+      name: Tileset_asome_bossndlvl._10
       rect:
         serializedVersion: 2
-        x: 416
-        y: 0
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -489,18 +441,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9e0aa60c8ab5f750800000000000000
-      internalID: 6338177161163837082
+      spriteID: 818bf6c1059dfa7e0800000000000000
+      internalID: -1751942791926138856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_14
+      name: Tileset_asome_bossndlvl._11
       rect:
         serializedVersion: 2
-        x: 448
-        y: 0
+        x: 160
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -510,18 +462,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81df67337d49d0320800000000000000
-      internalID: 2525838618027031832
+      spriteID: 56bf537d2428bfd00800000000000000
+      internalID: 1007542165237529445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_15
+      name: Tileset_asome_bossndlvl._12
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
+        x: 192
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -531,18 +483,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4da4acc30f653a260800000000000000
-      internalID: 7107620226732804820
+      spriteID: 35a95fb83ce463d60800000000000000
+      internalID: 7869564000650238547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_16
+      name: Tileset_asome_bossndlvl._13
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
+        x: 224
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -552,18 +504,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bd2a5c69abccfc40800000000000000
-      internalID: 5547532769541369264
+      spriteID: c855fd53812773b40800000000000000
+      internalID: 5419926124872291724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_17
+      name: Tileset_asome_bossndlvl._14
       rect:
         serializedVersion: 2
-        x: 544
-        y: 0
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -573,18 +525,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cc655c03252e3440800000000000000
-      internalID: 4917408675596168389
+      spriteID: 9a7106f4133542700800000000000000
+      internalID: 514627728677279657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_18
+      name: Tileset_asome_bossndlvl._15
       rect:
         serializedVersion: 2
-        x: 576
-        y: 0
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -594,18 +546,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7065ec23f36429f90800000000000000
-      internalID: -6948414037829986809
+      spriteID: e0d6a01bcb4b05640800000000000000
+      internalID: 5066748303308909838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_19
+      name: Tileset_asome_bossndlvl._16
       rect:
         serializedVersion: 2
-        x: 608
-        y: 0
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -615,18 +567,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8ad6a07fc7bbc680800000000000000
-      internalID: -8733684950778848630
+      spriteID: b3b33186a4d999870800000000000000
+      internalID: 8690149898887314235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Attack-Sheet_20
+      name: Tileset_asome_bossndlvl._17
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
+        x: 128
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -636,8 +588,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9b78cce46ae38500800000000000000
-      internalID: 397418911328926621
+      spriteID: e56318d68d5e99250800000000000000
+      internalID: 5952041100259702366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_asome_bossndlvl._18
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f6331ab6f3e90b0800000000000000
+      internalID: -5720064745215397989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_asome_bossndlvl._19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b8dff05c6045f90800000000000000
+      internalID: -6965935280188716169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_asome_bossndlvl._20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601c60b744f5392e0800000000000000
+      internalID: -2120246251834916602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_asome_bossndlvl._21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986dfe14bb46baca0800000000000000
+      internalID: -6004594922740525431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_asome_bossndlvl._22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d9694faae7b9910800000000000000
+      internalID: 1845207745051401546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_asome_bossndlvl._23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad8386e147781f50800000000000000
+      internalID: 6852357957968170403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_asome_bossndlvl._24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513d2beee2c140980800000000000000
+      internalID: -8573696802707811563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_asome_bossndlvl._25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785abf529200b7fe0800000000000000
+      internalID: -1190357499778456185
       vertices: []
       indices: 
       edges: []

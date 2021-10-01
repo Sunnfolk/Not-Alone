@@ -14,7 +14,15 @@ namespace Player
         private PlayerColliders m_Colliders;
         private PlayerDash m_Dash;
         private bool m_Falling;
-    
+        
+        
+        [SerializeField] private float attackTimer;
+        private bool m_Attack1;
+        private bool m_Attack2;
+
+        public bool m_Attacking = false;
+        
+
         private void Awake()
         {
             m_Animator = GetComponent<Animator>();
@@ -25,15 +33,68 @@ namespace Player
             m_Coyote = GetComponent<CoyoteTime>();
             m_Colliders = GetComponent<PlayerColliders>();
             m_Dash = GetComponent<PlayerDash>();
+            
         }
     
         private void Update()
         {
+            if (attackTimer > 0f)
+            {
+                attackTimer -= 1 * Time.deltaTime;
+            }
+            
+            
+            if (!m_Coyote.canCoyote)
+            {
+                m_Attack1 = false;
+                m_Attack2 = false;
+                
+            }
+            
             if (m_Input.moveVector.x != 0)
             {
                 if (m_Coyote.isDashing) return;
                 transform.localScale = new Vector2(m_Input.moveVector.x, 1f);
             }
+            
+            if (m_Input.attack)
+            {
+                if (m_Coyote.canCoyote)
+                {
+                    if (attackTimer > 0 || m_Attacking) return;
+                    if (!m_Attack1 && !m_Attack2)
+                    {
+                        m_Animator.Play("Attack1");
+                        float time = m_Animator.GetCurrentAnimatorClipInfo(0).Length;
+                        attackTimer.Equals(time);
+                        m_Attack1 = true;
+                    }
+                    else if (m_Attack1 && !m_Attack2)
+                    {
+                        m_Animator.Play("Attack2");
+                        float time = m_Animator.GetCurrentAnimatorClipInfo(0).Length;
+                        attackTimer.Equals(time);
+                        m_Attack2 = true;
+                    }
+                    else if (m_Attack1 && m_Attack2)
+                    {
+                        m_Animator.Play("Attack3");
+                        float time = m_Animator.GetCurrentAnimatorClipInfo(0).Length;
+                        attackTimer.Equals(time);
+                        m_Attack1 = false;
+                        m_Attack2 = false;
+                        
+                    }
+                }
+                else
+                {
+                    m_Animator.Play("AirAttack");
+                    
+                }
+            }
+
+            if (m_Attacking) return;
+
             //On ground Run and 
             if (m_Coyote.canCoyote)
             {
@@ -71,13 +132,31 @@ namespace Player
             if (m_Coyote.canCoyote) return;
             m_Falling = true;
             m_Animator.Play(stateName:"Fall");
-        } 
-        /*
-        private IEnumerator FallTimer()
-        {
-            yield return new WaitForSeconds(0.6f);
-            Falling();
         }
-        */
+
+        public void Attacking()
+        {
+            m_Attacking = m_Attacking == false;
+        }
+
+        public void AirAttack()
+        {
+            m_Rigidbody2D.gravityScale = 0;
+            m_Jump.enabled = false;
+            m_Input.enabled = false;
+            StartCoroutine(AirAttackTimer());
+            m_Rigidbody2D.gravityScale = 5;
+
+        }
+        
+        private IEnumerator AirAttackTimer()
+        {
+            yield return new WaitForSeconds(0.2f);
+            m_Rigidbody2D.gravityScale = 5;
+            m_Input.enabled = true;
+            m_Jump.enabled = true;
+            
+        }
+        
     }
 }
