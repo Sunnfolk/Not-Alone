@@ -23,7 +23,7 @@ namespace Player
             {
                 RestartScene();
             }
-
+            /*
             if (m_Velocity.atMaxVelocity)
             {
                 print("At max velocity");
@@ -40,7 +40,7 @@ namespace Player
             {
                 velocityTimer = m_VelocityTime;
             }
-            
+            */
         }
 
         void OnTriggerEnter2D(Collider2D collider)

@@ -13,6 +13,7 @@ namespace Enemy
         void Start()
         {
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
+            player = GameObject.FindGameObjectWithTag("Player").transform;
         }
 
         // Update is called once per frame
