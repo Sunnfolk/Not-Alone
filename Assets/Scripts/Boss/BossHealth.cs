@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,7 +5,7 @@ namespace Boss
 {
     public class BossHealth : MonoBehaviour
     {
-        [SerializeField] public int enemyHealth = 10;
+        [SerializeField] public int enemyHealth = 100;
         private Animator m_Animator;
         public bool dead = false;
         public Slider healthBar;
@@ -44,11 +43,8 @@ namespace Boss
 
         private void Death()
         {
-            if (enemyHealth <= 0);
-            {
-                dead = true;
-                m_Animator.SetFloat("Death", 2);
-            }
+            dead = true;
+            m_Animator.SetFloat("Death", 2);
         }
         
     }

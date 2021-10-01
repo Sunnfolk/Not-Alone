@@ -72,7 +72,7 @@ namespace Player
                 }
                 if (enemy.TryGetComponent(out BossHealth bossHealth))
                 {
-                    bossHealth.TakeDamage(2);
+                    bossHealth.TakeDamage(1);
                 }
                 print("I Attacked: " + enemy.transform.name);
                 attacking = false;

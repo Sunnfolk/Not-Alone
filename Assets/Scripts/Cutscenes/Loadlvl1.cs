@@ -15,5 +15,10 @@ namespace Cutscenes
         {
             SceneManager.LoadScene("Level1 1");
         }
+
+        public void LoadSceneEnd()
+        {
+            SceneManager.LoadScene("End Scene");
+        }
     }
 }

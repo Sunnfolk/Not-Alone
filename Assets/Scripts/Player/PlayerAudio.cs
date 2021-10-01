@@ -15,6 +15,8 @@ namespace Player
         public AudioClip walk;
         public AudioClip landing;
         public AudioClip dashing;
+
+        public ParticleSystem dust;
     
 
         private AudioSource m_Audio;
@@ -33,7 +35,6 @@ namespace Player
             m_Dash = GetComponent<PlayerDash>();
             m_Audio = GetComponent<AudioSource>();
             m_Coyote = GetComponent<CoyoteTime>();
-            
             Music();
         }
 
@@ -53,6 +54,7 @@ namespace Player
                 m_Audio.pitch = Random.Range(0.5f, 1.5f);
                 m_Audio.PlayOneShot(landing);
                 m_CanLand = false;
+                dust.Play();
             }
             else if (!m_Colliders.IsGrounded())
             {
