@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TestScenes/TestSceneAslak.unity
     guid: 0d5469bc2b8813e459f01e30f9be5eec
   - enabled: 1
+    path: Assets/Scenes/Story Scenes/Title Scene.unity
+    guid: e42450334ba358441801cb26ff35d3f1
+  - enabled: 1
     path: Assets/Scenes/Story Scenes/Starting Scene.unity
     guid: 78f18fe82ab522f4eb1e694112d2b307
   - enabled: 1
