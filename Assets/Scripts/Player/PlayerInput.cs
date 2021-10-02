@@ -1,6 +1,7 @@
 using Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 [RequireComponent(typeof(CoyoteTime))]
 public class PlayerInput : MonoBehaviour
 {
@@ -36,5 +37,26 @@ public class PlayerInput : MonoBehaviour
 
      // Attack
      attack = Mouse.current.leftButton.wasPressedThisFrame;
+     
+     //Load Levels
+     if (Keyboard.current.escapeKey.isPressed)
+     {
+         if (Keyboard.current.bKey.wasPressedThisFrame)
+         {
+             SceneManager.LoadScene("BossLevel");
+         }
+         else if (Keyboard.current.vKey.wasPressedThisFrame)
+         {
+             SceneManager.LoadScene("Level 2");
+         }
+         else if (Keyboard.current.cKey.wasPressedThisFrame)
+         {
+             SceneManager.LoadScene("Level1 1");
+         }
+         else if (Keyboard.current.xKey.wasPressedThisFrame)
+         {
+             SceneManager.LoadScene("Title Scene");
+         }
+     }
     }
 }

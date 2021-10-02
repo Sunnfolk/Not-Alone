@@ -10,12 +10,16 @@ namespace Player
     public class PlayerDash : MonoBehaviour
 
     {
+        private Animator m_Animator;
         private PlayerJump m_Jump;
         private CoyoteTime m_Coyote;
         private PlayerWalk m_Walk;
         private PlayerColliders m_Colliders;
         private Rigidbody2D m_Rigidbody2D;
         private PlayerInput m_Input;
+
+        public bool turnOffAnimations;
+        
         [SerializeField] private float normalGravity = 5f;
         [SerializeField] private float dashSpeed = 10f;
 
@@ -27,6 +31,7 @@ namespace Player
             m_Walk = GetComponent<PlayerWalk>(); 
             m_Coyote = GetComponent<CoyoteTime>();
             m_Jump = GetComponent<PlayerJump>();
+            m_Animator = GetComponent<Animator>();
         }
 
         private void Update()
@@ -45,6 +50,8 @@ namespace Player
             if (m_Coyote.hasDashed || m_Coyote.isDashing) return;
             if (m_Input.moveVector == Vector2.zero) return;
             m_Coyote.hasDashed = true;
+            m_Animator.Play("Dash");
+            m_Animator.enabled = false;
             m_Walk.enabled = false;
             m_Jump.enabled = false;
             m_Input.enabled = false;
@@ -71,7 +78,9 @@ namespace Player
             m_Input.enabled = true;
             m_Walk.enabled = true;
             m_Jump.enabled = true;
+            m_Animator.enabled = true;
             m_Coyote.isDashing = false;
+            
         }
         IEnumerator GroundDash()
         {

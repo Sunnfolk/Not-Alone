@@ -14,6 +14,7 @@ namespace Player
         private PlayerDash m_Dash;
         private PlayerWalk m_Walk;
         private PlayerInput m_Input;
+        private Animator m_Animator;
         [HideInInspector] public bool hasDashed;
         [HideInInspector] public bool isDashing;
             
@@ -32,6 +33,7 @@ namespace Player
             m_Dash = GetComponent<PlayerDash>();
             m_Walk = GetComponent<PlayerWalk>();
             m_Input = GetComponent<PlayerInput>();
+            m_Animator = GetComponent<Animator>();
         }
     
         void Update()
@@ -63,6 +65,7 @@ namespace Player
                 m_Input.enabled = true;
                 m_Walk.enabled = true;
                 m_Jump.enabled = true;
+                m_Animator.enabled = true;
             }
             
             m_Dash.enabled = !canCoyote;
