@@ -57,6 +57,10 @@ public class PlayerInput : MonoBehaviour
          {
              SceneManager.LoadScene("Title Scene");
          }
+         else if (Keyboard.current.zKey.wasPressedThisFrame)
+         {
+             SceneManager.LoadScene("Credits");
+         }
      }
     }
 }
