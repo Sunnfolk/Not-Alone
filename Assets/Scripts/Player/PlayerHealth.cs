@@ -45,6 +45,15 @@ namespace Player
             {
                 if (i < health)
                 {
+                    hearts[i].sprite = fullHeart;
+                }
+                else
+                {
+                    hearts[i].sprite = emptyHeart;
+                }
+                
+                if (i < numberOfHearts)
+                {
                     hearts[i].enabled = true;
                 }
                 else

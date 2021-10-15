@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class EasyCheckPoint : MonoBehaviour
+public partial class EasyCheckPoint : MonoBehaviour
 {
     private static Vector2 _SavedPosition;
     public static GameObject player;
