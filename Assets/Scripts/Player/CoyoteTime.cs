@@ -65,7 +65,6 @@ namespace Player
                 m_Input.enabled = true;
                 m_Walk.enabled = true;
                 m_Jump.enabled = true;
-                m_Animator.enabled = true;
             }
             
             m_Dash.enabled = !canCoyote;

@@ -89,7 +89,6 @@ namespace Player
                 else
                 {
                     m_Animator.Play("AirAttack");
-                    
                 }
             }
 
@@ -114,49 +113,29 @@ namespace Player
                 }
                 else
                 {
-                    if (!m_Falling)
-                    {
-                        m_Animator.Play(stateName:"StartFalling");
+                    //if (!m_Falling)
+                    //{
+                        m_Animator.Play(stateName:"Fall");
                         //StartCoroutine(FallTimer());
-                    }
-                    else
+                    //}
+                    /*else
                     {   
                         Falling();
-                    }
+                    } */
                 }
             }
         }
 
-        private void Falling()
+        /*private void Falling()
         {
             if (m_Coyote.canCoyote) return;
             m_Falling = true;
             m_Animator.Play(stateName:"Fall");
-        }
+        }*/
 
         public void Attacking()
         {
             m_Attacking = m_Attacking == false;
         }
-
-        public void AirAttack()
-        {
-            m_Rigidbody2D.gravityScale = 0;
-            m_Jump.enabled = false;
-            m_Input.enabled = false;
-            StartCoroutine(AirAttackTimer());
-            m_Rigidbody2D.gravityScale = 5;
-
-        }
-        
-        private IEnumerator AirAttackTimer()
-        {
-            yield return new WaitForSeconds(0.2f);
-            m_Rigidbody2D.gravityScale = 5;
-            m_Input.enabled = true;
-            m_Jump.enabled = true;
-            
-        }
-        
     }
 }
