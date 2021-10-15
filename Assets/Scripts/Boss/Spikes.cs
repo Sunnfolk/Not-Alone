@@ -32,7 +32,7 @@ public class Spikes : MonoBehaviour
                 AnimationSetTimer();
             }
         }
-        else if (spikeLength >= spike.Length && timerTime <= 0)
+        else if (spikeLength >= spike.Length-1 && timerTime <= 0)
         {
             go = false;
             foreach (var obj in spike)
@@ -46,7 +46,9 @@ public class Spikes : MonoBehaviour
 
     private void StartSpikes()
     {
-        spikeLength = 0;
+        print("isrunning");
+        //if (go) return;
+        spikeLength = 0 ;
         AnimationSetTimer();
         go = true;
        
@@ -62,7 +64,7 @@ public class Spikes : MonoBehaviour
         
         if (spikeLength >= spike.Length-1)
         {
-            timerTime += 0.5f;
+            timerTime += 0.5f ;
         }
         else
         {
