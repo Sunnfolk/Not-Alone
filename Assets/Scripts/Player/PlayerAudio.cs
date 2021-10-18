@@ -10,13 +10,12 @@ namespace Player
     [RequireComponent(typeof(CoyoteTime))]
     public class PlayerAudio : MonoBehaviour
     {
-        public AudioClip music;
         public AudioClip jump;
         public AudioClip walk;
         public AudioClip landing;
         public AudioClip dashing;
 
-        public ParticleSystem dust;
+        private Dust m_Particle;
     
 
         private AudioSource m_Audio;
@@ -35,7 +34,8 @@ namespace Player
             m_Dash = GetComponent<PlayerDash>();
             m_Audio = GetComponent<AudioSource>();
             m_Coyote = GetComponent<CoyoteTime>();
-            Music();
+            m_Particle = GetComponent<Dust>();
+            
         }
 
         
@@ -54,7 +54,7 @@ namespace Player
                 m_Audio.pitch = Random.Range(0.5f, 1.5f);
                 m_Audio.PlayOneShot(landing);
                 m_CanLand = false;
-                dust.Play();
+                m_Particle.CreateDust();
             }
             else if (!m_Colliders.IsGrounded())
             {
@@ -63,7 +63,7 @@ namespace Player
         }
         private void JumpAudio()
         {
-            if (m_Input.jump && (m_Coyote.canCoyote || m_Colliders.IsGrounded()))
+            if (m_Input.jump && (m_Coyote.canCoyote))
             {
                 m_Audio.volume = 0.5f;
                 m_Audio.pitch = Random.Range(0.5f, 1.5f);
@@ -90,12 +90,6 @@ namespace Player
                 m_Audio.pitch = Random.Range(0.5f, 1.5f);
                 m_Audio.PlayOneShot(dashing);
             } 
-        }
-
-        private void Music()
-        {
-            m_Audio.volume = 0.5f;
-            m_Audio.PlayOneShot(music);
         }
     }
 }

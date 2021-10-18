@@ -9,6 +9,7 @@ TagManager:
   - Damage
   - DeathZone
   - NextLevel
+  - PillPickup
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Player
   - NextLevel
   - PostProcessing
-  - 
+  - PillPickup
   - 
   - 
   - 
