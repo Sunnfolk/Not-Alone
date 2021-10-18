@@ -47,12 +47,12 @@ namespace Player
         {
             if (collider.gameObject.CompareTag("Death"))
             {
-                RestartScene();
+                EasyCheckPoint.ResetPlayerPosition();
             }
 
             if (collider.gameObject.CompareTag("DeathZone"))
             {
-                RestartScene();
+                EasyCheckPoint.ResetPlayerPosition();
             }
         }
         private void RestartScene()
