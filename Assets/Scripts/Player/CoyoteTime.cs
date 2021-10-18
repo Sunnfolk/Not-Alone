@@ -38,7 +38,7 @@ namespace Player
     
         void Update()
         {
-            print("CanCoyote = " + canCoyote);
+            //print("CanCoyote = " + canCoyote);
             if (m_Colliders.IsGrounded())
             {
                 canCoyote = true;
