@@ -25,7 +25,7 @@ namespace Player
                 atMaxVelocity = true;
             }
                 
-            print("MaxVelocity = " + atMaxVelocity);
+           // print("MaxVelocity = " + atMaxVelocity);
         }
 
         private void SetMaxVelocity()

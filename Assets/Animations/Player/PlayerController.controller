@@ -313,6 +313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18fb5ebf3eb8b94ea4785e1f87c1c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_PlayerAnimator: {fileID: 0}
+  m_Input: {fileID: 0}
 --- !u!1102 &1993283135604030625
 AnimatorState:
   serializedVersion: 6
@@ -446,6 +448,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18fb5ebf3eb8b94ea4785e1f87c1c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_PlayerAnimator: {fileID: 0}
+  m_Input: {fileID: 0}
 --- !u!1102 &5856337906449842360
 AnimatorState:
   serializedVersion: 6

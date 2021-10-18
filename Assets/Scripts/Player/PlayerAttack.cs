@@ -62,7 +62,7 @@ namespace Player
 
         public void Attack()
         {
-            print("Attack from animation" + transform.name);
+           // print("Attack from animation" + transform.name);
             
             foreach (var enemy in enemiesNearby)
             {
@@ -74,7 +74,7 @@ namespace Player
                 {
                     bossHealth.TakeDamage(1);
                 }
-                print("I Attacked: " + enemy.transform.name);
+                //print("I Attacked: " + enemy.transform.name);
                 attacking = false;
             }
         }

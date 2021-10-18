@@ -52,7 +52,7 @@ namespace Player
                     hearts[i].enabled = false;
                 }
             }
-            print("Player Health = " + health);
+          //  print("Player Health = " + health);
         }
 
         public void TakeDamage(int damage)
@@ -65,10 +65,10 @@ namespace Player
         private IEnumerator Invulnerability()
         {
             m_Invulnerable = true;
-            print("Invulnerable = " + m_Invulnerable);
+           // print("Invulnerable = " + m_Invulnerable);
             yield return new WaitForSeconds(invulnerabilityTimer);
             m_Invulnerable = false;
-            print("Invulnerable = " + m_Invulnerable);
+            //print("Invulnerable = " + m_Invulnerable);
         }
     }
 }

@@ -19,12 +19,14 @@ namespace Player
         private PlayerInput m_Input;
         private CoyoteTime m_Coyote;
         private Rigidbody2D m_Rigidbody2D;
+        private Dust m_Dust;
         
         void Awake()
         {
             m_Input = GetComponent<PlayerInput>();
             m_Coyote = GetComponent<CoyoteTime>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
+            m_Dust = GetComponent<Dust>();
         }
 
         void Update()
@@ -42,6 +44,7 @@ namespace Player
                 isJumping = true;
                 m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, jumpForce);
                 m_Coyote.canCoyote = false;
+                //m_Dust.CreateDust();
             }
         }
         

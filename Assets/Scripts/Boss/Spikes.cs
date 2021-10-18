@@ -10,13 +10,15 @@ public class Spikes : MonoBehaviour
     [SerializeField] public GameObject[] spike;
     public List<float> timers;
     private float timerTime = 0;
-    public int spikeLength = 0;
+    public int spikeLength;
 
     public bool go;
     public Animator _boss;
 
     private void Update()
     {
+        spikeLength = Mathf.Clamp(spikeLength, 0, 9);
+
         if (spikeLength < spike.Length)
         {
             if (timerTime >= 0 && go)
@@ -32,15 +34,16 @@ public class Spikes : MonoBehaviour
                 AnimationSetTimer();
             }
         }
-        else if (spikeLength >= spike.Length-1 && timerTime <= 0)
+        else if ((spikeLength >= spike.Length-1 && timerTime <= 0 ) && go)
         {
-            go = false;
+            
             foreach (var obj in spike)
             {
                 obj.SetActive(false);
-                
+
             }
-            _boss.SetTrigger("Spikes");
+            _boss.SetBool("SpikesBool", true);
+            go = false;
         }
     }
 
@@ -51,7 +54,7 @@ public class Spikes : MonoBehaviour
         spikeLength = 0 ;
         AnimationSetTimer();
         go = true;
-       
+
     }
 
     private void AnimationSetTimer()
@@ -59,9 +62,9 @@ public class Spikes : MonoBehaviour
         spike[spikeLength].SetActive(true);
         spike[spikeLength].TryGetComponent(out Animator anim);
         anim.Play("SpikeAnimation");
-        
+
         timerTime = anim.GetCurrentAnimatorClipInfo(0).Length;
-        
+
         if (spikeLength >= spike.Length-1)
         {
             timerTime += 0.5f ;

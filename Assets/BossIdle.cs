@@ -7,12 +7,13 @@ public class BossIdle : StateMachineBehaviour
 {
     public float timer;
     private static readonly int Walk = Animator.StringToHash("Walk");
-    
+
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timer = 1;
+        
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -26,6 +27,7 @@ public class BossIdle : StateMachineBehaviour
         {
             timer -= Time.deltaTime;
         }
+        animator.SetBool("SpikesBool", false);
             
     }
 

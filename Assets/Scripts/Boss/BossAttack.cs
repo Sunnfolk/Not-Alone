@@ -13,7 +13,7 @@ namespace Boss
         public float biteRange;
         public float slamRange;
         [SerializeField] private float attackRangeBite = 20;
-        [SerializeField] private float attackRangeSlam = 8;
+        [SerializeField] private float attackRangeSlam = 6;
 
         private Animator m_Animator;
         private Rigidbody2D m_Rigidbody2D;
@@ -34,9 +34,10 @@ namespace Boss
             if (Math.Abs(Vector2.Distance(m_Player.position, m_Rigidbody2D.position) - attackRangeBite) < 2f)
             {
                 m_Animator.SetTrigger("Bite");
-                print("activated Bite");
+                m_Animator.ResetTrigger("Slam");
+                
             }
-            else if (Math.Abs(Vector2.Distance(m_Player.position, m_Rigidbody2D.position) - attackRangeSlam) < 2f)
+            else if (Math.Abs(Vector2.Distance(m_Player.position, m_Rigidbody2D.position) - attackRangeSlam) < 6f)
             {
                 m_Animator.SetTrigger("Slam");
                 m_Animator.ResetTrigger("Bite");
