@@ -5,12 +5,13 @@ namespace WorldSystems
 {
     public class LoadBossLevel : MonoBehaviour
     {
+
+        public FadeInOut _fade;
         private void OnTriggerEnter2D(Collider2D collider)
         {
-            
-            if (collider.gameObject.CompareTag("NextLevel"))
+            if (collider.gameObject.CompareTag("Player"))
             {
-                SceneManager.LoadScene("BossLevel");
+                _fade.FadeOut();
             }
         }
     }
