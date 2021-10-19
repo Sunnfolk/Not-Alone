@@ -8,7 +8,7 @@ namespace WorldSystems
         private void OnTriggerEnter2D(Collider2D collider)
         {
             
-            if (collider.gameObject.CompareTag("NextLevel"))
+            if (collider.gameObject.CompareTag("Player"))
             {
                 SceneManager.LoadScene("Level 2");
             }
