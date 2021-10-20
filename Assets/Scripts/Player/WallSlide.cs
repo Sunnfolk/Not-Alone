@@ -5,6 +5,7 @@ namespace Player
     
     public class WallSlide : MonoBehaviour
     {
+        /*
         private Rigidbody2D m_Rigidbody2D;
         public LayerMask groundMask;
 
@@ -45,5 +46,6 @@ namespace Player
         {
             m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, -slideSpeed);
         }
+        */
     }
 }

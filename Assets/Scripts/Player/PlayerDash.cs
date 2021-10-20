@@ -32,18 +32,16 @@ namespace Player
         private void Update()
         {
             if (m_Coyote.canCoyote) return;
-            if (m_Input.dash)
+            /*if (m_Input.dash)
             {
                 if (m_Coyote.hasDashed || m_Coyote.isDashing) return;
                 Dash();
-            }
+            }*/
         }
 
-        private void Dash()
+        public void Dash()
         {
-            if (m_Input.moveVector.y > 0f) return;
-            if (m_Coyote.hasDashed || m_Coyote.isDashing) return;
-            if (m_Input.moveVector == Vector2.zero) return;
+            
             m_Coyote.hasDashed = true;
             m_Walk.enabled = false;
             m_Jump.enabled = false;

@@ -7,12 +7,9 @@ namespace Player
     {
         private Animator m_Animator;
         private PlayerInput m_Input;
-        private PlayerJump m_Jump;
+        
         private Rigidbody2D m_Rigidbody2D;
         private CoyoteTime m_Coyote;
-        private PlayerAudio m_Audio;
-        private PlayerColliders m_Colliders;
-        private PlayerDash m_Dash;
         private bool m_Falling;
         
         
@@ -27,13 +24,8 @@ namespace Player
         {
             m_Animator = GetComponent<Animator>();
             m_Input = GetComponent<PlayerInput>();
-            m_Jump = GetComponent<PlayerJump>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
-            m_Audio = GetComponent<PlayerAudio>();
             m_Coyote = GetComponent<CoyoteTime>();
-            m_Colliders = GetComponent<PlayerColliders>();
-            m_Dash = GetComponent<PlayerDash>();
-            
         }
     
         private void Update()

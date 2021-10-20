@@ -16,7 +16,7 @@ namespace Enemy
         private void Update()
         {
             Death();
-            print(enemyHealth);
+            //print(enemyHealth);
         }
 
         public void TakeDamage(int damage)

@@ -14,82 +14,50 @@ namespace Player
         public AudioClip walk;
         public AudioClip landing;
         public AudioClip dashing;
-
-        private Dust m_Particle;
-    
+        public AudioClip attacking;
+        public AudioClip hit;
 
         private AudioSource m_Audio;
-        private PlayerInput m_Input;
-        private PlayerWalk m_Walk;
-        private PlayerColliders m_Colliders;
-        private PlayerDash m_Dash;
-        private CoyoteTime m_Coyote;
-
-        private bool m_CanLand;
+        
         private void Awake()
         {
-            m_Input = GetComponent<PlayerInput>();
-            m_Walk = GetComponent<PlayerWalk>();
-            m_Colliders = GetComponent<PlayerColliders>();
-            m_Dash = GetComponent<PlayerDash>();
             m_Audio = GetComponent<AudioSource>();
-            m_Coyote = GetComponent<CoyoteTime>();
-            m_Particle = GetComponent<Dust>();
-            
         }
 
-        
-        void Update()
+        public void LandingAudio()
         {
-            JumpAudio(); 
-            LandingAudio();
-            DashingAudio();
-            
+            m_Audio.pitch = Random.Range(0.5f, 1.5f);
+            m_Audio.PlayOneShot(landing);
         }
-
-        private void LandingAudio()
+        public void JumpAudio()
         {
-            if (m_Colliders.IsGrounded() && m_CanLand)
-            {
-                m_Audio.pitch = Random.Range(0.5f, 1.5f);
-                m_Audio.PlayOneShot(landing);
-                m_CanLand = false;
-                m_Particle.CreateDust();
-            }
-            else if (!m_Colliders.IsGrounded())
-            {
-                m_CanLand = true;
-            }
-        }
-        private void JumpAudio()
-        {
-            if (m_Input.jump && (m_Coyote.canCoyote))
-            {
-                m_Audio.volume = 0.5f;
-                m_Audio.pitch = Random.Range(0.5f, 1.5f);
-                m_Audio.PlayOneShot(jump);
-            
-                print("jumping");
-            }
+            m_Audio.pitch = Random.Range(0.5f, 1.5f);
+            m_Audio.PlayOneShot(jump);
         }
         
         public void WalkingAudio()
         {
-            m_Audio.volume = 0.5f;
             m_Audio.pitch = Random.Range(0.5f, 1.5f);
             m_Audio.PlayOneShot(walk);
         }
         
 
-        private void DashingAudio()
+        public void DashingAudio()
         {
-            if (m_Input.dash && (!m_Coyote.isDashing || !m_Coyote.canCoyote))
-            {
-                if (m_Input.moveVector == Vector2.zero) return;
-                m_Audio.volume = 0.5f;
-                m_Audio.pitch = Random.Range(0.5f, 1.5f);
-                m_Audio.PlayOneShot(dashing);
-            } 
+            m_Audio.pitch = Random.Range(0.5f, 1.5f);
+            m_Audio.PlayOneShot(dashing);
+        }
+
+        public void AttackingAudio()
+        {
+            m_Audio.pitch = Random.Range(0.5f, 1.5f);
+            m_Audio.PlayOneShot(attacking);
+        }
+
+        public void GettingHit()
+        {
+            m_Audio.pitch = Random.Range(0.5f, 1.5f);
+            m_Audio.PlayOneShot(hit);
         }
     }
 }
