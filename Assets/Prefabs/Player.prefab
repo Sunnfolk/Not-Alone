@@ -9777,9 +9777,9 @@ GameObject:
   - component: {fileID: 4371736783923473606}
   - component: {fileID: 4371736783923473654}
   - component: {fileID: 4371736783923473604}
-  - component: {fileID: 4371736783923473605}
   - component: {fileID: 4371736783923473607}
   - component: {fileID: 3054685815332319758}
+  - component: {fileID: 4414171777628099251}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10018,6 +10018,8 @@ MonoBehaviour:
   walk: {fileID: 0}
   landing: {fileID: 0}
   dashing: {fileID: 0}
+  attacking: {fileID: 0}
+  hit: {fileID: 0}
 --- !u!82 &8301825895008090131
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10170,20 +10172,6 @@ MonoBehaviour:
   halfHeart: {fileID: 21300000, guid: ad8c0eba76451a44a85c44bcd01df6ce, type: 3}
   emptyHeart: {fileID: 21300000, guid: 4e8670f985757e045b71ad1c3757cd06, type: 3}
   invulnerabilityTimer: 0.5
---- !u!114 &4371736783923473605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8301825895008090127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84cabd3478997e44b8fa424060d74da7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackTimer: 0
-  m_Attacking: 0
 --- !u!114 &4371736783923473607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10219,6 +10207,19 @@ MonoBehaviour:
   dust: {fileID: 8334795626289820970}
   attack: {fileID: 529336274224165571}
   dash: {fileID: 3255620144249305688}
+--- !u!114 &4414171777628099251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8301825895008090127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084ed3a59683bfc4693169aa4d878d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states: 0
 --- !u!1 &8350034270738474932
 GameObject:
   m_ObjectHideFlags: 0

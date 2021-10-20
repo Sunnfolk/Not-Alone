@@ -6,14 +6,14 @@ using UnityEngine;
 
 public class GetingClaws : StateMachineBehaviour
 {
-    public NewPlayerAnimator m_PlayerAnimator;
+    public NewPlayerAnimation m_PlayerAnimator;
     public PlayerInput m_Input;
     
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        m_PlayerAnimator = animator.GetComponent<PlayerAnimator>();
+        m_PlayerAnimator = animator.GetComponent<NewPlayerAnimation>();
         m_Input = animator.GetComponent<PlayerInput>();
         
         m_PlayerAnimator.enabled = false;
