@@ -36,16 +36,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-UserSettings/EditorUserSettings.asset
-Assets/Sprites/UI/Pills.jpg.meta
-Assets/Sprites/UI/Pills.jpg
-Assets/Sprites/Player/Sprites/player_Fall-Sheet.png.meta
-Assets/Sprites/Player/Sprites/player_Fall-Sheet.png
-Assets/Animations/Player/SpriteSheets/StartFalling.png.meta
-Assets/Animations/Player/SpriteSheets/StartFalling.png
-Assets/Animations/Player/SpriteSheets/GainingClaws.anim.meta
-Assets/Animations/Player/SpriteSheets/GainingClaws.anim
-Assets/Animations/Player/SpriteSheets/gaining_claws_Not_alone_vertical-Sheet_0.controller.meta
-Assets/Animations/Player/SpriteSheets/gaining_claws_Not_alone_vertical-Sheet_0.controller
-Assets/Animations/Player/SpriteSheets/Falling.png.meta
-Assets/Animations/Player/SpriteSheets/Falling.png
