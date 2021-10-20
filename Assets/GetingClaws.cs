@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class GetingClaws : StateMachineBehaviour
 {
-    public PlayerAnimator m_PlayerAnimator;
+    public NewPlayerAnimator m_PlayerAnimator;
     public PlayerInput m_Input;
     
 
