@@ -37994,7 +37994,11 @@ PrefabInstance:
       propertyPath: hearts.Array.data[4]
       value: 
       objectReference: {fileID: 748301132}
-    - target: {fileID: 4371736783923473605, guid: d610b7693b00b6a40990664cc88402c2, type: 3}
+    - target: {fileID: 4371736783923473606, guid: d610b7693b00b6a40990664cc88402c2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 008eae33ed518994ebace1ecefe7c94f, type: 2}
+    - target: {fileID: 4414171777628099251, guid: d610b7693b00b6a40990664cc88402c2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -40851,7 +40855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95692dafd5e608740948618e46405579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fade: {fileID: 0}
+  _fade: {fileID: 460262481}
 --- !u!1 &1532139645
 GameObject:
   m_ObjectHideFlags: 0
