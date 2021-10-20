@@ -4761,7 +4761,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10014,12 +10014,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e1d0eae51f224e48bf4f3054e3f1938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 0}
   jump: {fileID: 0}
   walk: {fileID: 0}
   landing: {fileID: 0}
   dashing: {fileID: 0}
-  dust: {fileID: 0}
 --- !u!82 &8301825895008090131
 AudioSource:
   m_ObjectHideFlags: 0
