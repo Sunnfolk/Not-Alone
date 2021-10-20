@@ -1,6 +1,4 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Player
 {
@@ -8,7 +6,7 @@ namespace Player
     [RequireComponent(typeof(PlayerInput))]
     public class WallJump : MonoBehaviour
     {
-        
+     /*   
         public float walkSpeed;
         private PlayerInput m_Input;
         public float jumpSpeed;
@@ -103,7 +101,7 @@ namespace Player
             m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, -slideSpeed);
         }
 
-        
+        */
         }
     }
     

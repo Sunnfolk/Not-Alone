@@ -59,15 +59,6 @@ namespace Player
                 hasDashed = false;
                 isDashing = false;
             }
-
-            if (!hasDashed)
-            {
-                m_Input.enabled = true;
-                m_Walk.enabled = true;
-                m_Jump.enabled = true;
-            }
-            
-            m_Dash.enabled = !canCoyote;
         }
     }
 }
